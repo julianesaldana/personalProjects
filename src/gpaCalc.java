@@ -4,8 +4,8 @@ public class gpaCalc {
     public static void main(String[]arg){
         System.out.print("GPA Calculator\n----------\nInput number of classes you are taking: ");
         Scanner in = new Scanner(System.in);
-        double numClasses = in.nextInt();
-        double tally = 0;
+        int numClasses = in.nextInt();
+        int tally = 0;
         String grade;
         for (int i = 1; i <= numClasses; i++){
             System.out.printf("Input grade for class %d: ", i);
