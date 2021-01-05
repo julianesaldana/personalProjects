@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class gpaCalc {
     public static void main(String[]arg){
-        System.out.print("GPA Calculator\n----------\nInput number of classes you are taking: ");
         Scanner in = new Scanner(System.in);
-        int numClasses = in.nextInt();
-        int tally = 0;
+        System.out.print("GPA Calculator\n----------\nInput number of classes you are taking: ");
+        float numClasses = in.nextFloat();
+        float tally = 0;
         String grade;
         for (int i = 1; i <= numClasses; i++){
             System.out.printf("Input grade for class %d: ", i);
@@ -31,7 +31,7 @@ public class gpaCalc {
                     break;
             }
         }
-        double gpa = tally / numClasses;
+        float gpa = tally / numClasses;
         System.out.printf("Your gpa is: %.3f", gpa);
     }
 }
