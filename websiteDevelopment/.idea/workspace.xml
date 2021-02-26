@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18d441d5-9f8b-429f-bfaa-9548c3bf88fb" name="Default Changelist" comment="" />
+    <list default="true" id="18d441d5-9f8b-429f-bfaa-9548c3bf88fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,17 +31,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.subsytems.html">
+  <component name="RunManager" selected="JavaScript Debug.book.html">
+    <configuration name="book.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/websiteDevelopment/book.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="draft.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/websiteDevelopment/draft.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="subsytems.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/websiteDevelopment/subsytems.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/websiteDevelopment/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.book.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="JavaScript Debug.subsytems.html" />
         <item itemvalue="JavaScript Debug.draft.html" />
       </list>
@@ -55,6 +66,7 @@
       <updated>1614293777537</updated>
       <workItem from="1614293778771" duration="305000" />
       <workItem from="1614295037139" duration="1702000" />
+      <workItem from="1614361191444" duration="3037000" />
     </task>
     <servers />
   </component>
