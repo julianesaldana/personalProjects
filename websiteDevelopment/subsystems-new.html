@@ -1,1742 +1,362 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-
-    <title>SUBSYSTEMS &#8211; Long Beach Rocketry</title>
-    <script>
-        (function () {
-            var query = document.location.search;
-
-            if (query && query.indexOf('preview=true') !== -1) {
-                window.name = 'wp-preview-4925';
-            }
-
-            if (window.addEventListener) {
-                window.addEventListener('unload', function () {
-                    window.name = '';
-                }, false);
-            }
-        }());
-    </script>
-    <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
-    <link rel='dns-prefetch' href='//s.w.org'/>
-    <link rel="alternate" type="application/rss+xml" title="Long Beach Rocketry &raquo; Feed"
-          href="https://longbeachrocketry.com/feed/"/>
-    <link rel="alternate" type="application/rss+xml" title="Long Beach Rocketry &raquo; Comments Feed"
-          href="https://longbeachrocketry.com/comments/feed/"/>
-    <script>
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
-            "svgExt": ".svg",
-            "source": {"concatemoji": "https:\/\/longbeachrocketry.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}
-        };
-        !function (e, a, t) {
-            var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d");
-
-            function s(e, t) {
-                var a = String.fromCharCode;
-                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
-                e = i.toDataURL();
-                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
-            }
-
-            function c(e) {
-                var t = a.createElement("script");
-                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
-            }
-
-            for (o = Array("flag", "emoji"), t.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
-                if (!p || !p.fillText) return !1;
-                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
-                    case"flag":
-                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
-                    case"emoji":
-                        return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212])
-                }
-                return !1
-            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
-            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () {
-                t.DOMReady = !0
-            }, t.supports.everything || (n = function () {
-                t.readyCallback()
-            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
-                "complete" === a.readyState && t.readyCallback()
-            })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
-    <style>
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
-    <link rel='stylesheet' id='dashicons-css'
-          href='https://longbeachrocketry.com/wp-includes/css/dashicons.min.css?ver=5.6.2' media='all'/>
-    <link rel='stylesheet' id='admin-bar-css'
-          href='https://longbeachrocketry.com/wp-includes/css/admin-bar.min.css?ver=5.6.2' media='all'/>
-    <link rel='stylesheet' id='astra-theme-css-css'
-          href='https://longbeachrocketry.com/wp-content/themes/astra/assets/css/minified/style.min.css?ver=2.6.0'
-          media='all'/>
-    <style id='astra-theme-css-inline-css'>
-        html {
-            font-size: 100%;
-        }
-
-        a, .page-title {
-            color: #000000;
-        }
-
-        a:hover, a:focus {
-            color: #ecaa00;
-        }
-
-        body, button, input, select, textarea, .ast-button, .ast-custom-button {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            font-size: 1rem;
-        }
-
-        blockquote {
-            color: #000000;
-        }
-
-        h1, .entry-content h1, .entry-content h1 a, h2, .entry-content h2, .entry-content h2 a, h3, .entry-content h3, .entry-content h3 a, h4, .entry-content h4, .entry-content h4 a, h5, .entry-content h5, .entry-content h5 a, h6, .entry-content h6, .entry-content h6 a, .site-title, .site-title a {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 900;
-            text-transform: none;
-        }
-
-        .site-title {
-            font-size: 50px;
-            font-size: 3.125rem;
-        }
-
-        header .site-logo-img .custom-logo-link img {
-            max-width: 250px;
-        }
-
-        .astra-logo-svg {
-            width: 250px;
-        }
-
-        .ast-archive-description .ast-archive-title {
-            font-size: 40px;
-            font-size: 2.5rem;
-        }
-
-        .site-header .site-description {
-            font-size: 15px;
-            font-size: 0.9375rem;
-        }
-
-        .entry-title {
-            font-size: 30px;
-            font-size: 1.875rem;
-        }
-
-        .comment-reply-title {
-            font-size: 26px;
-            font-size: 1.625rem;
-        }
-
-        .ast-comment-list #cancel-comment-reply-link {
-            font-size: 16px;
-            font-size: 1rem;
-        }
-
-        h1, .entry-content h1, .entry-content h1 a {
-            font-size: 80px;
-            font-size: 5rem;
-            font-weight: 900;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1;
-            text-transform: capitalize;
-        }
-
-        h2, .entry-content h2, .entry-content h2 a {
-            font-size: 24px;
-            font-size: 1.5rem;
-            font-weight: 800;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1;
-            text-transform: none;
-        }
-
-        h3, .entry-content h3, .entry-content h3 a {
-            font-size: 18px;
-            font-size: 1.125rem;
-            font-weight: 400;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1;
-            text-transform: none;
-        }
-
-        h4, .entry-content h4, .entry-content h4 a {
-            font-size: 16px;
-            font-size: 1rem;
-            line-height: 1;
-        }
-
-        h5, .entry-content h5, .entry-content h5 a {
-            font-size: 14px;
-            font-size: 0.875rem;
-            line-height: 1;
-        }
-
-        h6, .entry-content h6, .entry-content h6 a {
-            font-size: 12px;
-            font-size: 0.75rem;
-            line-height: 1;
-        }
-
-        .ast-single-post .entry-title, .page-title {
-            font-size: 30px;
-            font-size: 1.875rem;
-        }
-
-        #secondary, #secondary button, #secondary input, #secondary select, #secondary textarea {
-            font-size: 16px;
-            font-size: 1rem;
-        }
-
-        ::selection {
-            background-color: #ecaa00;
-            color: #000000;
-        }
-
-        body, h1, .entry-title a, .entry-content h1, .entry-content h1 a, h2, .entry-content h2, .entry-content h2 a, h3, .entry-content h3, .entry-content h3 a, h4, .entry-content h4, .entry-content h4 a, h5, .entry-content h5, .entry-content h5 a, h6, .entry-content h6, .entry-content h6 a {
-            color: #000000;
-        }
-
-        .tagcloud a:hover, .tagcloud a:focus, .tagcloud a.current-item {
-            color: #ffffff;
-            border-color: #000000;
-            background-color: #000000;
-        }
-
-        .main-header-menu .menu-link, .ast-header-custom-item a {
-            color: #000000;
-        }
-
-        .main-header-menu .menu-item:hover > .menu-link, .main-header-menu .menu-item:hover > .ast-menu-toggle, .main-header-menu .ast-masthead-custom-menu-items a:hover, .main-header-menu .menu-item.focus > .menu-link, .main-header-menu .menu-item.focus > .ast-menu-toggle, .main-header-menu .current-menu-item > .menu-link, .main-header-menu .current-menu-ancestor > .menu-link, .main-header-menu .current-menu-item > .ast-menu-toggle, .main-header-menu .current-menu-ancestor > .ast-menu-toggle {
-            color: #000000;
-        }
-
-        input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="reset"]:focus, input[type="search"]:focus, textarea:focus {
-            border-color: #000000;
-        }
-
-        input[type="radio"]:checked, input[type=reset], input[type="checkbox"]:checked, input[type="checkbox"]:hover:checked, input[type="checkbox"]:focus:checked, input[type=range]::-webkit-slider-thumb {
-            border-color: #000000;
-            background-color: #000000;
-            box-shadow: none;
-        }
-
-        .site-footer a:hover + .post-count, .site-footer a:focus + .post-count {
-            background: #000000;
-            border-color: #000000;
-        }
-
-        .ast-small-footer {
-            color: #ffffff;
-        }
-
-        .ast-small-footer > .ast-footer-overlay {
-            background-color: #000000;;
-        }
-
-        .footer-adv .footer-adv-overlay {
-            border-top-style: solid;
-            border-top-color: #7a7a7a;
-        }
-
-        .ast-comment-meta {
-            line-height: 1.666666667;
-            font-size: 13px;
-            font-size: 0.8125rem;
-        }
-
-        .single .nav-links .nav-previous, .single .nav-links .nav-next, .single .ast-author-details .author-title, .ast-comment-meta {
-            color: #000000;
-        }
-
-        .entry-meta, .entry-meta * {
-            line-height: 1.45;
-            color: #000000;
-        }
-
-        .entry-meta a:hover, .entry-meta a:hover *, .entry-meta a:focus, .entry-meta a:focus * {
-            color: #ecaa00;
-        }
-
-        .ast-404-layout-1 .ast-404-text {
-            font-size: 200px;
-            font-size: 12.5rem;
-        }
-
-        .widget-title {
-            font-size: 22px;
-            font-size: 1.375rem;
-            color: #000000;
-        }
-
-        #cat option, .secondary .calendar_wrap thead a, .secondary .calendar_wrap thead a:visited {
-            color: #000000;
-        }
-
-        .secondary .calendar_wrap #today, .ast-progress-val span {
-            background: #000000;
-        }
-
-        .secondary a:hover + .post-count, .secondary a:focus + .post-count {
-            background: #000000;
-            border-color: #000000;
-        }
-
-        .calendar_wrap #today > a {
-            color: #ffffff;
-        }
-
-        .ast-pagination a, .page-links .page-link, .single .post-navigation a {
-            color: #000000;
-        }
-
-        .ast-pagination a:hover, .ast-pagination a:focus, .ast-pagination > span:hover:not(.dots), .ast-pagination > span.current, .page-links > .page-link, .page-links .page-link:hover, .post-navigation a:hover {
-            color: #ecaa00;
-        }
-
-        .ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle {
-            background: transparent;
-            color: #000000;
-        }
-
-        .ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle {
-            background: transparent;
-            border: 1px solid #000000;
-            color: #000000;
-        }
-
-        .ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle {
-            background: #000000;
-            color: #ecaa00;
-        }
-
-        @media (max-width: 782px) {
-            .entry-content .wp-block-columns .wp-block-column {
-                margin-left: 0px;
-            }
-        }
-
-        @media (max-width: 921px) {
-            #secondary.secondary {
-                padding-top: 0;
-            }
-
-            .ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
-                padding: 1.5em 2.14em;
-            }
-
-            .ast-separate-container #primary, .ast-separate-container #secondary {
-                padding: 1.5em 0;
-            }
-
-            .ast-separate-container.ast-right-sidebar #secondary {
-                padding-left: 1em;
-                padding-right: 1em;
-            }
-
-            .ast-separate-container.ast-two-container #secondary {
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-            .ast-page-builder-template .entry-header #secondary {
-                margin-top: 1.5em;
-            }
-
-            .ast-page-builder-template #secondary {
-                margin-top: 1.5em;
-            }
-
-            #primary, #secondary {
-                padding: 1.5em 0;
-                margin: 0;
-            }
-
-            .ast-left-sidebar #content > .ast-container {
-                display: flex;
-                flex-direction: column-reverse;
-                width: 100%;
-            }
-
-            .ast-author-box img.avatar {
-                margin: 20px 0 0 0;
-            }
-
-            .ast-pagination {
-                padding-top: 1.5em;
-                text-align: center;
-            }
-
-            .ast-pagination .next.page-numbers {
-                display: inherit;
-                float: none;
-            }
-        }
-
-        @media (max-width: 921px) {
-            .ast-page-builder-template.ast-left-sidebar #secondary {
-                padding-right: 20px;
-            }
-
-            .ast-page-builder-template.ast-right-sidebar #secondary {
-                padding-left: 20px;
-            }
-
-            .ast-right-sidebar #primary {
-                padding-right: 0;
-            }
-
-            .ast-right-sidebar #secondary {
-                padding-left: 0;
-            }
-
-            .ast-left-sidebar #primary {
-                padding-left: 0;
-            }
-
-            .ast-left-sidebar #secondary {
-                padding-right: 0;
-            }
-
-            .ast-pagination .prev.page-numbers {
-                padding-left: .5em;
-            }
-
-            .ast-pagination .next.page-numbers {
-                padding-right: .5em;
-            }
-        }
-
-        @media (min-width: 922px) {
-            .ast-separate-container.ast-right-sidebar #primary, .ast-separate-container.ast-left-sidebar #primary {
-                border: 0;
-            }
-
-            .ast-separate-container.ast-right-sidebar #secondary, .ast-separate-container.ast-left-sidebar #secondary {
-                border: 0;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .ast-separate-container.ast-two-container #secondary .widget:last-child {
-                margin-bottom: 0;
-            }
-
-            .ast-separate-container .ast-comment-list li .comment-respond {
-                padding-left: 2.66666em;
-                padding-right: 2.66666em;
-            }
-
-            .ast-author-box {
-                -js-display: flex;
-                display: flex;
-            }
-
-            .ast-author-bio {
-                flex: 1;
-            }
-
-            .error404.ast-separate-container #primary, .search-no-results.ast-separate-container #primary {
-                margin-bottom: 4em;
-            }
-        }
-
-        @media (min-width: 922px) {
-            .ast-right-sidebar #primary {
-                border-right: 1px solid #eee;
-            }
-
-            .ast-right-sidebar #secondary {
-                border-left: 1px solid #eee;
-                margin-left: -1px;
-            }
-
-            .ast-left-sidebar #primary {
-                border-left: 1px solid #eee;
-            }
-
-            .ast-left-sidebar #secondary {
-                border-right: 1px solid #eee;
-                margin-right: -1px;
-            }
-
-            .ast-separate-container.ast-two-container.ast-right-sidebar #secondary {
-                padding-left: 30px;
-                padding-right: 0;
-            }
-
-            .ast-separate-container.ast-two-container.ast-left-sidebar #secondary {
-                padding-right: 30px;
-                padding-left: 0;
-            }
-        }
-
-        .elementor-button-wrapper .elementor-button {
-            border-style: solid;
-            border-top-width: 2px;
-            border-right-width: 2px;
-            border-left-width: 2px;
-            border-bottom-width: 2px;
-        }
-
-        body .elementor-button.elementor-size-sm, body .elementor-button.elementor-size-xs, body .elementor-button.elementor-size-md, body .elementor-button.elementor-size-lg, body .elementor-button.elementor-size-xl, body .elementor-button {
-            border-radius: 0;
-            padding-top: 16px;
-            padding-right: 40px;
-            padding-bottom: 16px;
-            padding-left: 40px;
-        }
-
-        .elementor-button-wrapper .elementor-button {
-            border-color: #ffda27;
-            background-color: #000000;
-        }
-
-        .elementor-button-wrapper .elementor-button:hover, .elementor-button-wrapper .elementor-button:focus {
-            color: #ffffff;
-            background-color: #000000;
-            border-color: #414042;
-        }
-
-        .wp-block-button .wp-block-button__link, .elementor-button-wrapper .elementor-button {
-            color: #ecaa00;
-        }
-
-        .elementor-button-wrapper .elementor-button {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        body .elementor-button.elementor-size-sm, body .elementor-button.elementor-size-xs, body .elementor-button.elementor-size-md, body .elementor-button.elementor-size-lg, body .elementor-button.elementor-size-xl, body .elementor-button {
-            font-size: 12px;
-            font-size: 0.75rem;
-        }
-
-        .wp-block-button .wp-block-button__link {
-            border-style: solid;
-            border-top-width: 2px;
-            border-right-width: 2px;
-            border-left-width: 2px;
-            border-bottom-width: 2px;
-            border-color: #ffda27;
-            background-color: #000000;
-            color: #ecaa00;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            line-height: 1;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-size: 0.75rem;
-            border-radius: 0;
-            padding-top: 16px;
-            padding-right: 40px;
-            padding-bottom: 16px;
-            padding-left: 40px;
-        }
-
-        .wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:focus {
-            color: #ffffff;
-            background-color: #000000;
-            border-color: #414042;
-        }
-
-        .elementor-widget-heading h1.elementor-heading-title {
-            line-height: 1;
-        }
-
-        .elementor-widget-heading h2.elementor-heading-title {
-            line-height: 1;
-        }
-
-        .elementor-widget-heading h3.elementor-heading-title {
-            line-height: 1;
-        }
-
-        .elementor-widget-heading h4.elementor-heading-title {
-            line-height: 1;
-        }
-
-        .elementor-widget-heading h5.elementor-heading-title {
-            line-height: 1;
-        }
-
-        .elementor-widget-heading h6.elementor-heading-title {
-            line-height: 1;
-        }
-
-        .menu-toggle, button, .ast-button, .ast-custom-button, .button, input#submit, input[type="button"], input[type="submit"], input[type="reset"] {
-            border-style: solid;
-            border-top-width: 2px;
-            border-right-width: 2px;
-            border-left-width: 2px;
-            border-bottom-width: 2px;
-            color: #ecaa00;
-            border-color: #ffda27;
-            background-color: #000000;
-            border-radius: 0;
-            padding-top: 16px;
-            padding-right: 40px;
-            padding-bottom: 16px;
-            padding-left: 40px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            font-size: 12px;
-            font-size: 0.75rem;
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        button:focus, .menu-toggle:hover, button:hover, .ast-button:hover, .button:hover, input[type=reset]:hover, input[type=reset]:focus, input#submit:hover, input#submit:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-            color: #ffffff;
-            background-color: #000000;
-            border-color: #414042;
-        }
-
-        @media (min-width: 921px) {
-            .ast-container {
-                max-width: 100%;
-            }
-        }
-
-        @media (min-width: 544px) {
-            .ast-container {
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 544px) {
-            .ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
-                padding: 1.5em 1em;
-            }
-
-            .ast-separate-container #content .ast-container {
-                padding-left: 0.54em;
-                padding-right: 0.54em;
-            }
-
-            .ast-separate-container #secondary {
-                padding-top: 0;
-            }
-
-            .ast-separate-container.ast-two-container #secondary .widget {
-                margin-bottom: 1.5em;
-                padding-left: 1em;
-                padding-right: 1em;
-            }
-
-            .ast-separate-container .comments-count-wrapper {
-                padding: 1.5em 1em;
-            }
-
-            .ast-separate-container .ast-comment-list li.depth-1 {
-                padding: 1.5em 1em;
-                margin-bottom: 1.5em;
-            }
-
-            .ast-separate-container .ast-comment-list .bypostauthor {
-                padding: .5em;
-            }
-
-            .ast-separate-container .ast-archive-description {
-                padding: 1.5em 1em;
-            }
-
-            .ast-search-menu-icon.ast-dropdown-active .search-field {
-                width: 170px;
-            }
-
-            .ast-separate-container .comment-respond {
-                padding: 1.5em 1em;
-            }
-        }
-
-        @media (max-width: 544px) {
-            .ast-comment-list .children {
-                margin-left: 0.66666em;
-            }
-
-            .ast-separate-container .ast-comment-list .bypostauthor li {
-                padding: 0 0 0 .5em;
-            }
-        }
-
-        @media (max-width: 921px) {
-            .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon {
-                display: inline-block;
-            }
-
-            .ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon {
-                margin: 0;
-            }
-
-            .ast-comment-avatar-wrap img {
-                max-width: 2.5em;
-            }
-
-            .comments-area {
-                margin-top: 1.5em;
-            }
-
-            .ast-separate-container .comments-count-wrapper {
-                padding: 2em 2.14em;
-            }
-
-            .ast-separate-container .ast-comment-list li.depth-1 {
-                padding: 1.5em 2.14em;
-            }
-
-            .ast-separate-container .comment-respond {
-                padding: 2em 2.14em;
-            }
-        }
-
-        @media (max-width: 921px) {
-            .ast-header-break-point .main-header-bar .ast-search-menu-icon.slide-search .search-form {
-                right: 0;
-            }
-
-            .ast-header-break-point .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon.slide-search .search-form {
-                right: -1em;
-            }
-
-            .ast-comment-avatar-wrap {
-                margin-right: 0.5em;
-            }
-        }
-
-        @media (min-width: 922px) {
-            .ast-small-footer .ast-container {
-                max-width: 100%;
-                padding-left: 35px;
-                padding-right: 35px;
-            }
-        }
-
-        @media (min-width: 545px) {
-            .ast-page-builder-template .comments-area, .single.ast-page-builder-template .entry-header, .single.ast-page-builder-template .post-navigation {
-                max-width: 1240px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-
-        body, .ast-separate-container {
-            background-color: #ffffff;;
-            background-image: none;;
-        }
-
-        @media (max-width: 921px) {
-            .ast-archive-description .ast-archive-title {
-                font-size: 40px;
-            }
-
-            .entry-title {
-                font-size: 30px;
-            }
-
-            h1, .entry-content h1, .entry-content h1 a {
-                font-size: 40px;
-            }
-
-            h2, .entry-content h2, .entry-content h2 a {
-                font-size: 30px;
-            }
-
-            h3, .entry-content h3, .entry-content h3 a {
-                font-size: 25px;
-            }
-
-            h4, .entry-content h4, .entry-content h4 a {
-                font-size: 20px;
-                font-size: 1.25rem;
-            }
-
-            h5, .entry-content h5, .entry-content h5 a {
-                font-size: 18px;
-                font-size: 1.125rem;
-            }
-
-            h6, .entry-content h6, .entry-content h6 a {
-                font-size: 16px;
-                font-size: 1rem;
-            }
-
-            .ast-single-post .entry-title, .page-title {
-                font-size: 30px;
-            }
-        }
-
-        @media (max-width: 544px) {
-            .ast-archive-description .ast-archive-title {
-                font-size: 40px;
-            }
-
-            .entry-title {
-                font-size: 30px;
-            }
-
-            h1, .entry-content h1, .entry-content h1 a {
-                font-size: 40px;
-            }
-
-            h2, .entry-content h2, .entry-content h2 a {
-                font-size: 30px;
-            }
-
-            h3, .entry-content h3, .entry-content h3 a {
-                font-size: 25px;
-            }
-
-            h4, .entry-content h4, .entry-content h4 a {
-                font-size: 18px;
-                font-size: 1.125rem;
-            }
-
-            h5, .entry-content h5, .entry-content h5 a {
-                font-size: 18px;
-                font-size: 1.125rem;
-            }
-
-            h6, .entry-content h6, .entry-content h6 a {
-                font-size: 16px;
-                font-size: 1rem;
-            }
-
-            .ast-single-post .entry-title, .page-title {
-                font-size: 30px;
-            }
-
-            .ast-header-break-point .site-branding img, .ast-header-break-point #masthead .site-logo-img .custom-logo-link img {
-                max-width: 160px;
-            }
-
-            .astra-logo-svg {
-                width: 160px;
-            }
-
-            .ast-header-break-point .site-logo-img .custom-mobile-logo-link img {
-                max-width: 160px;
-            }
-        }
-
-        @media (max-width: 921px) {
-            html {
-                font-size: 91.2%;
-            }
-        }
-
-        @media (max-width: 544px) {
-            html {
-                font-size: 91.2%;
-            }
-        }
-
-        @media (min-width: 922px) {
-            .ast-container {
-                max-width: 1240px;
-            }
-        }
-
-        @font-face {
-            font-family: "Astra";
-            src: url(https://longbeachrocketry.com/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"), url(https://longbeachrocketry.com/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"), url(https://longbeachrocketry.com/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");
-            font-weight: normal;
-            font-style: normal;
-            font-display: fallback;
-        }
-
-        @media (max-width: 921px) {
-            .main-header-bar .main-header-bar-navigation {
-                display: none;
-            }
-        }
-
-        .ast-desktop .main-header-menu.submenu-with-border .sub-menu, .ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper {
-            border-color: #ecaa00;
-        }
-
-        .ast-desktop .main-header-menu.submenu-with-border .sub-menu {
-            border-top-width: 0px;
-            border-right-width: 0px;
-            border-left-width: 0px;
-            border-bottom-width: 0px;
-            border-style: solid;
-        }
-
-        .ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu {
-            top: -0px;
-        }
-
-        .ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link, .ast-desktop .main-header-menu.submenu-with-border .children .menu-link {
-            border-bottom-width: 0px;
-            border-style: solid;
-            border-color: #eaeaea;
-        }
-
-        @media (min-width: 922px) {
-            .main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu, .main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu {
-                margin-left: -0px;
-            }
-        }
-
-        .ast-small-footer {
-            border-top-style: solid;
-            border-top-width: 5px;
-            border-top-color: #ecaa00;
-        }
-
-        @media (max-width: 920px) {
-            .ast-404-layout-1 .ast-404-text {
-                font-size: 100px;
-                font-size: 6.25rem;
-            }
-        }
-
-        #masthead .ast-container, .ast-header-breadcrumb .ast-container {
-            max-width: 100%;
-            padding-left: 35px;
-            padding-right: 35px;
-        }
-
-        @media (max-width: 921px) {
-            #masthead .ast-container, .ast-header-breadcrumb .ast-container {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-        }
-
-        #masthead .ast-container, .ast-header-breadcrumb .ast-container {
-            max-width: 100%;
-            padding-left: 35px;
-            padding-right: 35px;
-        }
-
-        @media (max-width: 921px) {
-            #masthead .ast-container, .ast-header-breadcrumb .ast-container {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-        }
-
-        @media (min-width: 922px) {
-            .ast-theme-transparent-header #masthead {
-                position: absolute;
-                left: 0;
-                right: 0;
-            }
-
-            .ast-theme-transparent-header .main-header-bar, .ast-theme-transparent-header.ast-header-break-point .main-header-bar {
-                background: none;
-            }
-
-            body.elementor-editor-active.ast-theme-transparent-header #masthead, .fl-builder-edit .ast-theme-transparent-header #masthead, body.vc_editor.ast-theme-transparent-header #masthead, body.brz-ed.ast-theme-transparent-header #masthead {
-                z-index: 0;
-            }
-
-            .ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link {
-                display: none;
-            }
-
-            .ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo {
-                display: inline-block;
-            }
-
-            .ast-theme-transparent-header .ast-above-header {
-                background-image: none;
-                background-color: transparent;
-            }
-
-            .ast-theme-transparent-header .ast-below-header {
-                background-image: none;
-                background-color: transparent;
-            }
-        }
-
-        .ast-theme-transparent-header .main-header-bar, .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu, .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar {
-            background-color: #000000;
-        }
-
-        .ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form {
-            background-color: #000000;
-        }
-
-        .ast-theme-transparent-header .ast-above-header, .ast-theme-transparent-header .ast-below-header, .ast-header-break-point.ast-theme-transparent-header .ast-above-header, .ast-header-break-point.ast-theme-transparent-header .ast-below-header {
-            background-color: #000000;
-        }
-
-        .ast-theme-transparent-header .site-title a, .ast-theme-transparent-header .site-title a:focus, .ast-theme-transparent-header .site-title a:hover, .ast-theme-transparent-header .site-title a:visited {
-            color: #ffffff;
-        }
-
-        .ast-theme-transparent-header .site-header .site-title a:hover {
-            color: #ffffff;
-        }
-
-        .ast-theme-transparent-header .site-header .site-description {
-            color: #ffffff;
-        }
-
-        .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item .menu-link, .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item > .ast-menu-toggle {
-            color: #ffffff;
-        }
-
-        .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-link:hover, .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item:hover > .menu-link, .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.focus > .menu-item, .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.current-menu-item > .menu-link, .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.current-menu-item > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item:hover > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.focus > .ast-menu-toggle {
-            color: #ecaa00;
-        }
-
-        .ast-theme-transparent-header .main-header-menu, .ast-theme-transparent-header .main-header-menu .menu-link, .ast-theme-transparent-header .ast-masthead-custom-menu-items, .ast-theme-transparent-header .ast-masthead-custom-menu-items a, .ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle {
-            color: #ffffff;
-        }
-
-        .ast-theme-transparent-header .main-header-menu .menu-item:hover > .menu-link, .ast-theme-transparent-header .main-header-menu .menu-item:hover > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .ast-masthead-custom-menu-items a:hover, .ast-theme-transparent-header .main-header-menu .focus > .menu-link, .ast-theme-transparent-header .main-header-menu .focus > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .current-menu-item > .menu-link, .ast-theme-transparent-header .main-header-menu .current-menu-ancestor > .menu-link, .ast-theme-transparent-header .main-header-menu .current-menu-item > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .current-menu-ancestor > .ast-menu-toggle {
-            color: #ecaa00;
-        }
-
-        .ast-theme-transparent-header div.ast-masthead-custom-menu-items, .ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget, .ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget-title {
-            color: #ffffff;
-        }
-
-        .ast-theme-transparent-header div.ast-masthead-custom-menu-items a, .ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget a {
-            color: #ffda27;
-        }
-
-        .ast-theme-transparent-header div.ast-masthead-custom-menu-items a:hover, .ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget a:hover {
-            color: #ecaa00;
-        }
-
-        @media (max-width: 921px) {
-            .ast-theme-transparent-header #masthead {
-                position: absolute;
-                left: 0;
-                right: 0;
-            }
-
-            .ast-theme-transparent-header .main-header-bar, .ast-theme-transparent-header.ast-header-break-point .main-header-bar {
-                background: none;
-            }
-
-            body.elementor-editor-active.ast-theme-transparent-header #masthead, .fl-builder-edit .ast-theme-transparent-header #masthead, body.vc_editor.ast-theme-transparent-header #masthead, body.brz-ed.ast-theme-transparent-header #masthead {
-                z-index: 0;
-            }
-
-            .ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link {
-                display: none;
-            }
-
-            .ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo {
-                display: inline-block;
-            }
-
-            .ast-theme-transparent-header .ast-above-header {
-                background-image: none;
-                background-color: transparent;
-            }
-
-            .ast-theme-transparent-header .ast-below-header {
-                background-image: none;
-                background-color: transparent;
-            }
-        }
-
-        @media (max-width: 921px) {
-            .ast-theme-transparent-header .main-header-bar, .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu, .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar {
-                background-color: #000000;
-            }
-
-            .ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form {
-                background-color: #000000;
-            }
-
-            .ast-theme-transparent-header .ast-above-header, .ast-theme-transparent-header .ast-below-header, .ast-header-break-point.ast-theme-transparent-header .ast-above-header, .ast-header-break-point.ast-theme-transparent-header .ast-below-header {
-                background-color: #000000;
-            }
-
-            .ast-theme-transparent-header .main-header-menu, .ast-theme-transparent-header .main-header-menu .menu-link, .ast-theme-transparent-header .ast-masthead-custom-menu-items, .ast-theme-transparent-header .ast-masthead-custom-menu-items a, .ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle, .ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle {
-                color: #ffffff;
-            }
-        }
-
-        @media (max-width: 544px) {
-            .ast-theme-transparent-header .main-header-bar, .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu, .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar {
-                background-color: #000000;
-            }
-
-            .ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form {
-                background-color: #000000;
-            }
-
-            .ast-theme-transparent-header .ast-above-header, .ast-theme-transparent-header .ast-below-header, .ast-header-break-point.ast-theme-transparent-header .ast-above-header, .ast-header-break-point.ast-theme-transparent-header .ast-below-header {
-                background-color: #000000;
-            }
-        }
-
-        .ast-theme-transparent-header .main-header-bar, .ast-theme-transparent-header.ast-header-break-point .main-header-bar {
-            border-bottom-width: 5px;
-            border-bottom-style: solid;
-            border-bottom-color: #ecaa00;
-        }
-
-        .ast-breadcrumbs .trail-browse, .ast-breadcrumbs .trail-items, .ast-breadcrumbs .trail-items li {
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-            border: none;
-            background: inherit;
-            text-indent: 0;
-        }
-
-        .ast-breadcrumbs .trail-browse {
-            font-size: inherit;
-            font-style: inherit;
-            font-weight: inherit;
-            color: inherit;
-        }
-
-        .ast-breadcrumbs .trail-items {
-            list-style: none;
-        }
-
-        .trail-items li::after {
-            padding: 0 0.3em;
-            content: "\00bb";
-        }
-
-        .trail-items li:last-of-type::after {
-            display: none;
-        }
-
-        h1, .entry-content h1, h2, .entry-content h2, h3, .entry-content h3, h4, .entry-content h4, h5, .entry-content h5, h6, .entry-content h6 {
-            color: #ecaa00;
-        }
-
-        .ast-header-break-point .main-header-bar {
-            border-bottom-width: 5px;
-            border-bottom-color: #ecaa00;
-        }
-
-        @media (min-width: 922px) {
-            .main-header-bar {
-                border-bottom-width: 5px;
-                border-bottom-color: #ecaa00;
-            }
-        }
-
-        .ast-flex {
-            -webkit-align-content: center;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -moz-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
-
-        .main-header-bar {
-            padding: 1em 0;
-        }
-
-        .ast-site-identity {
-            padding: 0;
-        }
-
-        .header-main-layout-1 .ast-flex.main-header-container, .header-main-layout-3 .ast-flex.main-header-container {
-            -webkit-align-content: center;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -moz-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
-
-        .header-main-layout-1 .ast-flex.main-header-container, .header-main-layout-3 .ast-flex.main-header-container {
-            -webkit-align-content: center;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -moz-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
-    </style>
-    <link rel='stylesheet' id='astra-google-fonts-css'
-          href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C%2C900%2C500&#038;display=fallback&#038;ver=2.6.0'
-          media='all'/>
-    <link rel='stylesheet' id='wp-block-library-css'
-          href='https://longbeachrocketry.com/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1614101173'
-          media='all'/>
-    <!--[if IE]>
-    <script src='https://longbeachrocketry.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.6.0'
-            id='astra-flexibility-js'></script>
-    <script id='astra-flexibility-js-after'>
-        flexibility(document.documentElement);
-    </script>
-    <![endif]-->
-    <link rel="https://api.w.org/" href="https://longbeachrocketry.com/wp-json/"/>
-    <link rel="alternate" type="application/json" href="https://longbeachrocketry.com/wp-json/wp/v2/pages/4925"/>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://longbeachrocketry.com/xmlrpc.php?rsd"/>
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
-          href="https://longbeachrocketry.com/wp-includes/wlwmanifest.xml"/>
-    <meta name="generator" content="WordPress 5.6.2"/>
-    <link rel='shortlink' href='https://longbeachrocketry.com/?p=4925'/>
-    <link rel="alternate" type="application/json+oembed"
-          href="https://longbeachrocketry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flongbeachrocketry.com%2F%3Fpage_id%3D4925"/>
-    <link rel="alternate" type="text/xml+oembed"
-          href="https://longbeachrocketry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flongbeachrocketry.com%2F%3Fpage_id%3D4925&#038;format=xml"/>
-    <style media="print">#wpadminbar {
-        display: none;
-    }</style>
-    <style media="screen">
-        html {
-            margin-top: 32px !important;
-        }
-
-        * html body {
-            margin-top: 32px !important;
-        }
-
-        @media screen and ( max-width: 782px ) {
-            html {
-                margin-top: 46px !important;
-            }
-
-            * html body {
-                margin-top: 46px !important;
-            }
-        }
-    </style>
-    <link rel="icon"
-          href="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-32x32.png"
-          sizes="32x32"/>
-    <link rel="icon"
-          href="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-192x192.png"
-          sizes="192x192"/>
-    <link rel="apple-touch-icon"
-          href="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-180x180.png"/>
-    <meta name="msapplication-TileImage"
-          content="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-270x270.png"/>
-    <style id="wp-custom-css">
-        .page p {
-            line-height: 2;
-        }        </style>
-</head>
-
-<body itemtype='https://schema.org/WebPage' itemscope='itemscope'
-      class="page-template-default page page-id-4925 logged-in admin-bar no-customize-support wp-custom-logo ast-desktop ast-plain-container ast-no-sidebar astra-2.6.0 ast-header-custom-item-inside ast-full-width-primary-header group-blog ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent ast-theme-transparent-header ast-normal-title-enabled">
-
-<script>
-    (function () {
-        var request, b = document.body, c = 'className', cs = 'customize-support',
-            rcs = new RegExp('(^|\\s+)(no-)?' + cs + '(\\s+|$)');
-
-        request = true;
-
-        b[c] = b[c].replace(rcs, ' ');
-        // The customizer requires postMessage and CORS (if the site is cross domain).
-        b[c] += (window.postMessage && request ? ' ' : ' no-') + cs;
-    }());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<title>SUBSYSTEMS &#8211; Long Beach Rocketry</title>
+	<script>
+	( function() {
+		var query = document.location.search;
+
+		if ( query && query.indexOf( 'preview=true' ) !== -1 ) {
+			window.name = 'wp-preview-4925';
+		}
+
+		if ( window.addEventListener ) {
+			window.addEventListener( 'unload', function() { window.name = ''; }, false );
+		}
+	}());
+	</script>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Long Beach Rocketry &raquo; Feed" href="https://longbeachrocketry.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Long Beach Rocketry &raquo; Comments Feed" href="https://longbeachrocketry.com/comments/feed/" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/longbeachrocketry.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='dashicons-css'  href='https://longbeachrocketry.com/wp-includes/css/dashicons.min.css?ver=5.6.2' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://longbeachrocketry.com/wp-includes/css/admin-bar.min.css?ver=5.6.2' media='all' />
+<link rel='stylesheet' id='astra-theme-css-css'  href='https://longbeachrocketry.com/wp-content/themes/astra/assets/css/minified/style.min.css?ver=2.6.0' media='all' />
+<style id='astra-theme-css-inline-css'>
+html{font-size:100%;}a,.page-title{color:#000000;}a:hover,a:focus{color:#ecaa00;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Montserrat',sans-serif;font-weight:400;font-size:16px;font-size:1rem;}blockquote{color:#000000;}h1,.entry-content h1,.entry-content h1 a,h2,.entry-content h2,.entry-content h2 a,h3,.entry-content h3,.entry-content h3 a,h4,.entry-content h4,.entry-content h4 a,h5,.entry-content h5,.entry-content h5 a,h6,.entry-content h6,.entry-content h6 a,.site-title,.site-title a{font-family:'Montserrat',sans-serif;font-weight:900;text-transform:none;}.site-title{font-size:50px;font-size:3.125rem;}header .site-logo-img .custom-logo-link img{max-width:250px;}.astra-logo-svg{width:250px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.5rem;}.site-header .site-description{font-size:15px;font-size:0.9375rem;}.entry-title{font-size:30px;font-size:1.875rem;}.comment-reply-title{font-size:26px;font-size:1.625rem;}.ast-comment-list #cancel-comment-reply-link{font-size:16px;font-size:1rem;}h1,.entry-content h1,.entry-content h1 a{font-size:80px;font-size:5rem;font-weight:900;font-family:'Montserrat',sans-serif;line-height:1;text-transform:capitalize;}h2,.entry-content h2,.entry-content h2 a{font-size:24px;font-size:1.5rem;font-weight:800;font-family:'Montserrat',sans-serif;line-height:1;text-transform:none;}h3,.entry-content h3,.entry-content h3 a{font-size:18px;font-size:1.125rem;font-weight:400;font-family:'Montserrat',sans-serif;line-height:1;text-transform:none;}h4,.entry-content h4,.entry-content h4 a{font-size:16px;font-size:1rem;line-height:1;}h5,.entry-content h5,.entry-content h5 a{font-size:14px;font-size:0.875rem;line-height:1;}h6,.entry-content h6,.entry-content h6 a{font-size:12px;font-size:0.75rem;line-height:1;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:1.875rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:16px;font-size:1rem;}::selection{background-color:#ecaa00;color:#000000;}body,h1,.entry-title a,.entry-content h1,.entry-content h1 a,h2,.entry-content h2,.entry-content h2 a,h3,.entry-content h3,.entry-content h3 a,h4,.entry-content h4,.entry-content h4 a,h5,.entry-content h5,.entry-content h5 a,h6,.entry-content h6,.entry-content h6 a{color:#000000;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#000000;background-color:#000000;}.main-header-menu .menu-link,.ast-header-custom-item a{color:#000000;}.main-header-menu .menu-item:hover > .menu-link,.main-header-menu .menu-item:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu .menu-item.focus > .menu-link,.main-header-menu .menu-item.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > .menu-link,.main-header-menu .current-menu-ancestor > .menu-link,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle{color:#000000;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#000000;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#000000;background-color:#000000;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#000000;border-color:#000000;}.ast-small-footer{color:#ffffff;}.ast-small-footer > .ast-footer-overlay{background-color:#000000;;}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.ast-comment-meta{line-height:1.666666667;font-size:13px;font-size:0.8125rem;}.single .nav-links .nav-previous,.single .nav-links .nav-next,.single .ast-author-details .author-title,.ast-comment-meta{color:#000000;}.entry-meta,.entry-meta *{line-height:1.45;color:#000000;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *{color:#ecaa00;}.ast-404-layout-1 .ast-404-text{font-size:200px;font-size:12.5rem;}.widget-title{font-size:22px;font-size:1.375rem;color:#000000;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#000000;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#000000;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#000000;border-color:#000000;}.calendar_wrap #today > a{color:#ffffff;}.ast-pagination a,.page-links .page-link,.single .post-navigation a{color:#000000;}.ast-pagination a:hover,.ast-pagination a:focus,.ast-pagination > span:hover:not(.dots),.ast-pagination > span.current,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#ecaa00;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#000000;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #000000;color:#000000;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#000000;color:#ecaa00;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}@media (max-width:921px){#secondary.secondary{padding-top:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary{margin-top:1.5em;}.ast-page-builder-template #secondary{margin-top:1.5em;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}.ast-pagination{padding-top:1.5em;text-align:center;}.ast-pagination .next.page-numbers{display:inherit;float:none;}}@media (max-width:921px){.ast-page-builder-template.ast-left-sidebar #secondary{padding-right:20px;}.ast-page-builder-template.ast-right-sidebar #secondary{padding-left:20px;}.ast-right-sidebar #primary{padding-right:0;}.ast-right-sidebar #secondary{padding-left:0;}.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}.ast-pagination .prev.page-numbers{padding-left:.5em;}.ast-pagination .next.page-numbers{padding-right:.5em;}}@media (min-width:922px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}.ast-separate-container .ast-comment-list li .comment-respond{padding-left:2.66666em;padding-right:2.66666em;}.ast-author-box{-js-display:flex;display:flex;}.ast-author-bio{flex:1;}.error404.ast-separate-container #primary,.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:922px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-right-sidebar #secondary{border-left:1px solid #eee;margin-left:-1px;}.ast-left-sidebar #primary{border-left:1px solid #eee;}.ast-left-sidebar #secondary{border-right:1px solid #eee;margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}}.elementor-button-wrapper .elementor-button{border-style:solid;border-top-width:2px;border-right-width:2px;border-left-width:2px;border-bottom-width:2px;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{border-radius:0;padding-top:16px;padding-right:40px;padding-bottom:16px;padding-left:40px;}.elementor-button-wrapper .elementor-button{border-color:#ffda27;background-color:#000000;}.elementor-button-wrapper .elementor-button:hover,.elementor-button-wrapper .elementor-button:focus{color:#ffffff;background-color:#000000;border-color:#414042;}.wp-block-button .wp-block-button__link,.elementor-button-wrapper .elementor-button{color:#ecaa00;}.elementor-button-wrapper .elementor-button{font-family:'Montserrat',sans-serif;font-weight:500;line-height:1;text-transform:uppercase;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{font-size:12px;font-size:0.75rem;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:2px;border-right-width:2px;border-left-width:2px;border-bottom-width:2px;border-color:#ffda27;background-color:#000000;color:#ecaa00;font-family:'Montserrat',sans-serif;font-weight:500;line-height:1;text-transform:uppercase;font-size:12px;font-size:0.75rem;border-radius:0;padding-top:16px;padding-right:40px;padding-bottom:16px;padding-left:40px;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#ffffff;background-color:#000000;border-color:#414042;}.elementor-widget-heading h1.elementor-heading-title{line-height:1;}.elementor-widget-heading h2.elementor-heading-title{line-height:1;}.elementor-widget-heading h3.elementor-heading-title{line-height:1;}.elementor-widget-heading h4.elementor-heading-title{line-height:1;}.elementor-widget-heading h5.elementor-heading-title{line-height:1;}.elementor-widget-heading h6.elementor-heading-title{line-height:1;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:2px;border-right-width:2px;border-left-width:2px;border-bottom-width:2px;color:#ecaa00;border-color:#ffda27;background-color:#000000;border-radius:0;padding-top:16px;padding-right:40px;padding-bottom:16px;padding-left:40px;font-family:'Montserrat',sans-serif;font-weight:500;font-size:12px;font-size:0.75rem;line-height:1;text-transform:uppercase;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.button:hover,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#000000;border-color:#414042;}@media (min-width:921px){.ast-container{max-width:100%;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.ast-separate-container .comments-count-wrapper{padding:1.5em 1em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}.ast-separate-container .comment-respond{padding:1.5em 1em;}}@media (max-width:544px){.ast-comment-list .children{margin-left:0.66666em;}.ast-separate-container .ast-comment-list .bypostauthor li{padding:0 0 0 .5em;}}@media (max-width:921px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-separate-container .comments-count-wrapper{padding:2em 2.14em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (max-width:921px){.ast-header-break-point .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:0;}.ast-header-break-point .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:-1em;}.ast-comment-avatar-wrap{margin-right:0.5em;}}@media (min-width:922px){.ast-small-footer .ast-container{max-width:100%;padding-left:35px;padding-right:35px;}}@media (min-width:545px){.ast-page-builder-template .comments-area,.single.ast-page-builder-template .entry-header,.single.ast-page-builder-template .post-navigation{max-width:1240px;margin-left:auto;margin-right:auto;}}body,.ast-separate-container{background-color:#ffffff;;background-image:none;;}@media (max-width:921px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1,.entry-content h1 a{font-size:40px;}h2,.entry-content h2,.entry-content h2 a{font-size:30px;}h3,.entry-content h3,.entry-content h3 a{font-size:25px;}h4,.entry-content h4,.entry-content h4 a{font-size:20px;font-size:1.25rem;}h5,.entry-content h5,.entry-content h5 a{font-size:18px;font-size:1.125rem;}h6,.entry-content h6,.entry-content h6 a{font-size:16px;font-size:1rem;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:544px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1,.entry-content h1 a{font-size:40px;}h2,.entry-content h2,.entry-content h2 a{font-size:30px;}h3,.entry-content h3,.entry-content h3 a{font-size:25px;}h4,.entry-content h4,.entry-content h4 a{font-size:18px;font-size:1.125rem;}h5,.entry-content h5,.entry-content h5 a{font-size:18px;font-size:1.125rem;}h6,.entry-content h6,.entry-content h6 a{font-size:16px;font-size:1rem;}.ast-single-post .entry-title,.page-title{font-size:30px;}.ast-header-break-point .site-branding img,.ast-header-break-point #masthead .site-logo-img .custom-logo-link img{max-width:160px;}.astra-logo-svg{width:160px;}.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:160px;}}@media (max-width:921px){html{font-size:91.2%;}}@media (max-width:544px){html{font-size:91.2%;}}@media (min-width:922px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(https://longbeachrocketry.com/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://longbeachrocketry.com/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://longbeachrocketry.com/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:921px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#ecaa00;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu{border-top-width:0px;border-right-width:0px;border-left-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu{top:-0px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link,.ast-desktop .main-header-menu.submenu-with-border .children .menu-link{border-bottom-width:0px;border-style:solid;border-color:#eaeaea;}@media (min-width:922px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.ast-small-footer{border-top-style:solid;border-top-width:5px;border-top-color:#ecaa00;}@media (max-width:920px){.ast-404-layout-1 .ast-404-text{font-size:100px;font-size:6.25rem;}}#masthead .ast-container,.ast-header-breadcrumb .ast-container{max-width:100%;padding-left:35px;padding-right:35px;}@media (max-width:921px){#masthead .ast-container,.ast-header-breadcrumb .ast-container{padding-left:20px;padding-right:20px;}}#masthead .ast-container,.ast-header-breadcrumb .ast-container{max-width:100%;padding-left:35px;padding-right:35px;}@media (max-width:921px){#masthead .ast-container,.ast-header-breadcrumb .ast-container{padding-left:20px;padding-right:20px;}}@media (min-width:922px){.ast-theme-transparent-header #masthead{position:absolute;left:0;right:0;}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{background:none;}body.elementor-editor-active.ast-theme-transparent-header #masthead,.fl-builder-edit .ast-theme-transparent-header #masthead,body.vc_editor.ast-theme-transparent-header #masthead,body.brz-ed.ast-theme-transparent-header #masthead{z-index:0;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link{display:none;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo{display:inline-block;}.ast-theme-transparent-header .ast-above-header{background-image:none;background-color:transparent;}.ast-theme-transparent-header .ast-below-header{background-image:none;background-color:transparent;}}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar{background-color:#000000;}.ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form{background-color:#000000;}.ast-theme-transparent-header .ast-above-header,.ast-theme-transparent-header .ast-below-header,.ast-header-break-point.ast-theme-transparent-header .ast-above-header,.ast-header-break-point.ast-theme-transparent-header .ast-below-header{background-color:#000000;}.ast-theme-transparent-header .site-title a,.ast-theme-transparent-header .site-title a:focus,.ast-theme-transparent-header .site-title a:hover,.ast-theme-transparent-header .site-title a:visited{color:#ffffff;}.ast-theme-transparent-header .site-header .site-title a:hover{color:#ffffff;}.ast-theme-transparent-header .site-header .site-description{color:#ffffff;}.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item .menu-link,.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item > .ast-menu-toggle{color:#ffffff;}.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-link:hover,.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item:hover > .menu-link,.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.focus > .menu-item,.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.current-menu-item > .menu-link,.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.current-menu-item > .ast-menu-toggle,.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item:hover > .ast-menu-toggle,.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu .menu-item.focus > .ast-menu-toggle{color:#ecaa00;}.ast-theme-transparent-header .main-header-menu,.ast-theme-transparent-header .main-header-menu .menu-link,.ast-theme-transparent-header .ast-masthead-custom-menu-items,.ast-theme-transparent-header .ast-masthead-custom-menu-items a,.ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle,.ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle{color:#ffffff;}.ast-theme-transparent-header .main-header-menu .menu-item:hover > .menu-link,.ast-theme-transparent-header .main-header-menu .menu-item:hover > .ast-menu-toggle,.ast-theme-transparent-header .main-header-menu .ast-masthead-custom-menu-items a:hover,.ast-theme-transparent-header .main-header-menu .focus > .menu-link,.ast-theme-transparent-header .main-header-menu .focus > .ast-menu-toggle,.ast-theme-transparent-header .main-header-menu .current-menu-item > .menu-link,.ast-theme-transparent-header .main-header-menu .current-menu-ancestor > .menu-link,.ast-theme-transparent-header .main-header-menu .current-menu-item > .ast-menu-toggle,.ast-theme-transparent-header .main-header-menu .current-menu-ancestor > .ast-menu-toggle{color:#ecaa00;}.ast-theme-transparent-header div.ast-masthead-custom-menu-items,.ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget,.ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget-title{color:#ffffff;}.ast-theme-transparent-header div.ast-masthead-custom-menu-items a,.ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget a{color:#ffda27;}.ast-theme-transparent-header div.ast-masthead-custom-menu-items a:hover,.ast-theme-transparent-header div.ast-masthead-custom-menu-items .widget a:hover{color:#ecaa00;}@media (max-width:921px){.ast-theme-transparent-header #masthead{position:absolute;left:0;right:0;}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{background:none;}body.elementor-editor-active.ast-theme-transparent-header #masthead,.fl-builder-edit .ast-theme-transparent-header #masthead,body.vc_editor.ast-theme-transparent-header #masthead,body.brz-ed.ast-theme-transparent-header #masthead{z-index:0;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link{display:none;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo{display:inline-block;}.ast-theme-transparent-header .ast-above-header{background-image:none;background-color:transparent;}.ast-theme-transparent-header .ast-below-header{background-image:none;background-color:transparent;}}@media (max-width:921px){.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar{background-color:#000000;}.ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form{background-color:#000000;}.ast-theme-transparent-header .ast-above-header,.ast-theme-transparent-header .ast-below-header,.ast-header-break-point.ast-theme-transparent-header .ast-above-header,.ast-header-break-point.ast-theme-transparent-header .ast-below-header{background-color:#000000;}.ast-theme-transparent-header .main-header-menu,.ast-theme-transparent-header .main-header-menu .menu-link,.ast-theme-transparent-header .ast-masthead-custom-menu-items,.ast-theme-transparent-header .ast-masthead-custom-menu-items a,.ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle,.ast-theme-transparent-header .main-header-menu .menu-item > .ast-menu-toggle{color:#ffffff;}}@media (max-width:544px){.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar{background-color:#000000;}.ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form{background-color:#000000;}.ast-theme-transparent-header .ast-above-header,.ast-theme-transparent-header .ast-below-header,.ast-header-break-point.ast-theme-transparent-header .ast-above-header,.ast-header-break-point.ast-theme-transparent-header .ast-below-header{background-color:#000000;}}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{border-bottom-width:5px;border-bottom-style:solid;border-bottom-color:#ecaa00;}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#ecaa00;}.ast-header-break-point .main-header-bar{border-bottom-width:5px;border-bottom-color:#ecaa00;}@media (min-width:922px){.main-header-bar{border-bottom-width:5px;border-bottom-color:#ecaa00;}}.ast-flex{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}.main-header-bar{padding:1em 0;}.ast-site-identity{padding:0;}.header-main-layout-1 .ast-flex.main-header-container, .header-main-layout-3 .ast-flex.main-header-container{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}.header-main-layout-1 .ast-flex.main-header-container, .header-main-layout-3 .ast-flex.main-header-container{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}
+</style>
+<link rel='stylesheet' id='astra-google-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C%2C900%2C500&#038;display=fallback&#038;ver=2.6.0' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://longbeachrocketry.com/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1614101173' media='all' />
+<!--[if IE]>
+<script src='https://longbeachrocketry.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.6.0' id='astra-flexibility-js'></script>
+<script id='astra-flexibility-js-after'>
+flexibility(document.documentElement);
 </script>
-<div id="wpadminbar" class="nojq nojs">
-    <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
-        <ul id='wp-admin-bar-root-default' class="ab-top-menu">
-            <li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true"
-                                                             href='https://longbeachrocketry.com/wp-admin/about.php'><span
-                    class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a>
-                <div class="ab-sub-wrapper">
-                    <ul id='wp-admin-bar-wp-logo-default' class="ab-submenu">
-                        <li id='wp-admin-bar-about'><a class='ab-item'
-                                                       href='https://longbeachrocketry.com/wp-admin/about.php'>About
-                            WordPress</a></li>
-                    </ul>
-                    <ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu">
-                        <li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a>
-                        </li>
-                        <li id='wp-admin-bar-documentation'><a class='ab-item' href='https://codex.wordpress.org/'>Documentation</a>
-                        </li>
-                        <li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/'>Support</a>
-                        </li>
-                        <li id='wp-admin-bar-feedback'><a class='ab-item'
-                                                          href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true"
-                                                               href='https://longbeachrocketry.com/wp-admin/'>Long Beach
-                Rocketry</a>
-                <div class="ab-sub-wrapper">
-                    <ul id='wp-admin-bar-site-name-default' class="ab-submenu">
-                        <li id='wp-admin-bar-dashboard'><a class='ab-item'
-                                                           href='https://longbeachrocketry.com/wp-admin/'>Dashboard</a>
-                        </li>
-                    </ul>
-                    <ul id='wp-admin-bar-appearance' class="ab-submenu">
-                        <li id='wp-admin-bar-widgets'><a class='ab-item'
-                                                         href='https://longbeachrocketry.com/wp-admin/themes.php?page=gutenberg-widgets'>Widgets</a>
-                        </li>
-                        <li id='wp-admin-bar-menus'><a class='ab-item'
-                                                       href='https://longbeachrocketry.com/wp-admin/nav-menus.php'>Menus</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item'
-                                                                            href='https://longbeachrocketry.com/wp-admin/customize.php?url=https%3A%2F%2Flongbeachrocketry.com%2F%3Fpage_id%3D4925'>Customize</a>
-            </li>
-            <li id='wp-admin-bar-comments'><a class='ab-item'
-                                              href='https://longbeachrocketry.com/wp-admin/edit-comments.php'><span
-                    class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-2" aria-hidden="true">2</span><span
-                    class="screen-reader-text comments-in-moderation-text">2 Comments in moderation</span></a></li>
-            <li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true"
-                                                                 href='https://longbeachrocketry.com/wp-admin/post-new.php'><span
-                    class="ab-icon"></span><span class="ab-label">New</span></a>
-                <div class="ab-sub-wrapper">
-                    <ul id='wp-admin-bar-new-content-default' class="ab-submenu">
-                        <li id='wp-admin-bar-new-post'><a class='ab-item'
-                                                          href='https://longbeachrocketry.com/wp-admin/post-new.php'>Post</a>
-                        </li>
-                        <li id='wp-admin-bar-new-media'><a class='ab-item'
-                                                           href='https://longbeachrocketry.com/wp-admin/media-new.php'>Media</a>
-                        </li>
-                        <li id='wp-admin-bar-new-page'><a class='ab-item'
-                                                          href='https://longbeachrocketry.com/wp-admin/post-new.php?post_type=page'>Page</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li id='wp-admin-bar-edit'><a class='ab-item'
-                                          href='https://longbeachrocketry.com/wp-admin/post.php?post=4925&#038;action=edit'>Edit
-                Page</a></li>
-        </ul>
-        <ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu">
-            <li id='wp-admin-bar-search' class="admin-bar-search">
-                <div class="ab-item ab-empty-item" tabindex="-1">
-                    <form action="https://longbeachrocketry.com/" method="get" id="adminbarsearch"><input
-                            class="adminbar-input" name="s" id="adminbar-search" type="text" value=""
-                            maxlength="150"/><label for="adminbar-search"
-                                                    class="screen-reader-text">Search</label><input type="submit"
-                                                                                                    class="adminbar-button"
-                                                                                                    value="Search"/>
-                    </form>
-                </div>
-            </li>
-            <li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true"
-                                                                            href='https://longbeachrocketry.com/wp-admin/profile.php'>Howdy,
-                <span class="display-name">Julian Saldana</span><img alt=''
-                                                                     src='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=26&#038;d=mm&#038;r=g'
-                                                                     srcset='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=52&#038;d=mm&#038;r=g 2x'
-                                                                     class='avatar avatar-26 photo' height='26'
-                                                                     width='26' loading='lazy'/></a>
-                <div class="ab-sub-wrapper">
-                    <ul id='wp-admin-bar-user-actions' class="ab-submenu">
-                        <li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1"
-                                                           href='https://longbeachrocketry.com/wp-admin/profile.php'><img
-                                alt=''
-                                src='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=64&#038;d=mm&#038;r=g'
-                                srcset='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=128&#038;d=mm&#038;r=g 2x'
-                                class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span
-                                class='display-name'>Julian Saldana</span><span class='username'>Julian</span></a></li>
-                        <li id='wp-admin-bar-edit-profile'><a class='ab-item'
-                                                              href='https://longbeachrocketry.com/wp-admin/profile.php'>Edit
-                            Profile</a></li>
-                        <li id='wp-admin-bar-logout'><a class='ab-item'
-                                                        href='https://longbeachrocketry.com/wp-login.php?action=logout&#038;_wpnonce=be32607f39'>Log
-                            Out</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <a class="screen-reader-shortcut"
-       href="https://longbeachrocketry.com/wp-login.php?action=logout&#038;_wpnonce=be32607f39">Log Out</a>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://longbeachrocketry.com/wp-json/" /><link rel="alternate" type="application/json" href="https://longbeachrocketry.com/wp-json/wp/v2/pages/4925" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://longbeachrocketry.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://longbeachrocketry.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.2" />
+<link rel='shortlink' href='https://longbeachrocketry.com/?p=4925' />
+<link rel="alternate" type="application/json+oembed" href="https://longbeachrocketry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flongbeachrocketry.com%2F%3Fpage_id%3D4925" />
+<link rel="alternate" type="text/xml+oembed" href="https://longbeachrocketry.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flongbeachrocketry.com%2F%3Fpage_id%3D4925&#038;format=xml" />
+<style media="print">#wpadminbar { display:none; }</style>
+	<style media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	<link rel="icon" href="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://longbeachrocketry.com/wp-content/uploads/2017/09/cropped-LongBeachRocketryLogoC-1-1-270x270.png" />
+		<style id="wp-custom-css">
+			.page p{line-height: 2;}		</style>
+		</head>
+
+<body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="page-template-default page page-id-4925 logged-in admin-bar no-customize-support wp-custom-logo ast-desktop ast-plain-container ast-no-sidebar astra-2.6.0 ast-header-custom-item-inside ast-full-width-primary-header group-blog ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent ast-theme-transparent-header ast-normal-title-enabled">
+
+	<script>
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://longbeachrocketry.com/wp-admin/about.php'><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/about.php'>About WordPress</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://codex.wordpress.org/'>Documentation</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://longbeachrocketry.com/wp-admin/'>Long Beach Rocketry</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-dashboard'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/'>Dashboard</a></li></ul><ul id='wp-admin-bar-appearance' class="ab-submenu"><li id='wp-admin-bar-widgets'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/themes.php?page=gutenberg-widgets'>Widgets</a></li><li id='wp-admin-bar-menus'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/nav-menus.php'>Menus</a></li></ul></div></li><li id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/customize.php?url=https%3A%2F%2Flongbeachrocketry.com%2F%3Fpage_id%3D4925'>Customize</a></li><li id='wp-admin-bar-comments'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/edit-comments.php'><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-2" aria-hidden="true">2</span><span class="screen-reader-text comments-in-moderation-text">2 Comments in moderation</span></a></li><li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://longbeachrocketry.com/wp-admin/post-new.php'><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-new-content-default' class="ab-submenu"><li id='wp-admin-bar-new-post'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/post-new.php'>Post</a></li><li id='wp-admin-bar-new-media'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/media-new.php'>Media</a></li><li id='wp-admin-bar-new-page'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/post-new.php?post_type=page'>Page</a></li></ul></div></li><li id='wp-admin-bar-edit'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/post.php?post=4925&#038;action=edit'>Edit Page</a></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://longbeachrocketry.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div></li><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://longbeachrocketry.com/wp-admin/profile.php'>Howdy, <span class="display-name">Julian Saldana</span><img alt='' src='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy'/></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='https://longbeachrocketry.com/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c3e62edd693f94be754f485e15621124?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span class='display-name'>Julian Saldana</span><span class='username'>Julian</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://longbeachrocketry.com/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://longbeachrocketry.com/wp-login.php?action=logout&#038;_wpnonce=be32607f39'>Log Out</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://longbeachrocketry.com/wp-login.php?action=logout&#038;_wpnonce=be32607f39">Log Out</a>
+					</div>
+
+		<div 
+	class="hfeed site" id="page">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+	
+		<header
+			class="site-header header-main-layout-1 ast-primary-menu-enabled ast-logo-title-inline ast-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead"		>
+
+			
+			
+<div class="main-header-bar-wrap">
+	<div class="main-header-bar">
+				<div class="ast-container">
+
+			<div class="ast-flex main-header-container">
+				
+		<div class="site-branding">
+			<div
+			class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"			>
+				<span class="site-logo-img"><a href="https://longbeachrocketry.com/" class="custom-logo-link" rel="home"><img width="250" height="78" src="https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-250x78.png" class="custom-logo" alt="Long Beach Rocketry" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-250x78.png 250w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-300x94.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-1024x321.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-768x241.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-1536x482.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-2048x642.png 2048w" sizes="(max-width: 250px) 100vw, 250px" /></a></span>			</div>
+		</div>
+
+		<!-- .site-branding -->
+				<div class="ast-mobile-menu-buttons">
+
+			
+					<div class="ast-button-wrap">
+			<button type="button" class="menu-toggle main-header-menu-toggle  ast-mobile-menu-buttons-fill "  aria-controls='primary-menu' aria-expanded='false'>
+				<span class="screen-reader-text">Main Menu</span>
+				<span class="menu-toggle-icon"></span>
+							</button>
+		</div>
+			
+			
+		</div>
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="ast-flex-grow-1 navigation-accessibility" id="site-navigation" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation"><ul id="primary-menu" class="main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border"><li id="menu-item-3691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3691"><a href="https://longbeachrocketry.com/" class="menu-link">HOME</a></li>
+<li id="menu-item-3692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3692"><a href="https://longbeachrocketry.com/subsystems/" class="menu-link">SUBSYSTEMS</a></li>
+<li id="menu-item-4525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4525"><a href="https://longbeachrocketry.com/outreach/" class="menu-link">OUTREACH</a></li>
+<li id="menu-item-3694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3694"><a href="https://longbeachrocketry.com/supportus/" class="menu-link">SUPPORT US</a></li>
+<li id="menu-item-3695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="https://longbeachrocketry.com/about-2/" class="menu-link">ABOUT</a></li>
+</ul></div></nav></div></div>			</div><!-- Main Header Container -->
+		</div><!-- ast-row -->
+			</div> <!-- Main Header Bar -->
+</div> <!-- Main Header Bar Wrap -->
+
+			
+		</header><!-- #masthead -->
+
+		
+	
+	
+	<div id="content" class="site-content">
+
+		<div class="ast-container">
+
+		
+
+	<div id="primary" class="content-area primary">
+
+		
+					<main id="main" class="site-main">
+
+				
+					
+					
+
+<article 
+	class="post-4925 page type-page status-draft ast-article-single" id="post-4925" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+
+	
+	<header class="entry-header ast-no-thumbnail ast-no-meta">
+
+		
+		<h1 class="entry-title" itemprop="headline"><span style="position: absolute; rect(1px, 1px, 1px, 1px); overflow: hidden; height: 1px; width: 1px;">SUBSYSTEMS</span></h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content clear" 
+		itemprop="text"	>
+
+		
+		
+<div class="wp-block-cover alignfull has-white-background-color" style="min-height:600px"><img loading="lazy" width="1024" height="576" class="wp-block-cover__image-background wp-image-4443" alt="" src="https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited.jpg" style="object-position:50% 60%" data-object-fit="cover" data-object-position="50% 60%" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited.jpg 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited-300x169.jpg 300w, https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /><div class="wp-block-cover__inner-container">
+<p class="has-text-align-right" style="font-size:60px"><strong><span style="color:#ecaa00" class="has-inline-color">&#8220;DIVISION NAME&#8221;</span></strong></p>
+</div></div>
+
+
+
+<div class="wp-block-group has-white-background-color has-background"><div class="wp-block-group__inner-container">
+<hr class="wp-block-separator has-text-color has-background has-white-background-color has-white-color is-style-dots"/>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column is-vertically-aligned-center">
+<h2>&#8220;DIVISION NAME&#8221;</h2>
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+<p><strong>SUBDIVISIONS:</strong> Lorem ipsum dolor sit amet</p>
+</div>
 </div>
 
-<div
-        class="hfeed site" id="page">
-    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
-
-    <header
-            class="site-header header-main-layout-1 ast-primary-menu-enabled ast-logo-title-inline ast-menu-toggle-icon ast-mobile-header-inline"
-            id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead">
-
-
-        <div class="main-header-bar-wrap">
-            <div class="main-header-bar">
-                <div class="ast-container">
-
-                    <div class="ast-flex main-header-container">
 
-                        <div class="site-branding">
-                            <div
-                                    class="ast-site-identity" itemtype="https://schema.org/Organization"
-                                    itemscope="itemscope">
-                                <span class="site-logo-img"><a href="https://longbeachrocketry.com/"
-                                                               class="custom-logo-link" rel="home"><img width="250"
-                                                                                                        height="78"
-                                                                                                        src="https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-250x78.png"
-                                                                                                        class="custom-logo"
-                                                                                                        alt="Long Beach Rocketry"
-                                                                                                        srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-250x78.png 250w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-300x94.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-1024x321.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-768x241.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-1536x482.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo_wTitle-1-2048x642.png 2048w"
-                                                                                                        sizes="(max-width: 250px) 100vw, 250px"/></a></span>
-                            </div>
-                        </div>
-
-                        <!-- .site-branding -->
-                        <div class="ast-mobile-menu-buttons">
-
-
-                            <div class="ast-button-wrap">
-                                <button type="button"
-                                        class="menu-toggle main-header-menu-toggle  ast-mobile-menu-buttons-fill "
-                                        aria-controls='primary-menu' aria-expanded='false'>
-                                    <span class="screen-reader-text">Main Menu</span>
-                                    <span class="menu-toggle-icon"></span>
-                                </button>
-                            </div>
-
-
-                        </div>
-                        <div class="ast-main-header-bar-alignment">
-                            <div class="main-header-bar-navigation">
-                                <nav class="ast-flex-grow-1 navigation-accessibility" id="site-navigation"
-                                     aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement"
-                                     itemscope="itemscope">
-                                    <div class="main-navigation">
-                                        <ul id="primary-menu"
-                                            class="main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border">
-                                            <li id="menu-item-3691"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3691">
-                                                <a href="https://longbeachrocketry.com/" class="menu-link">HOME</a></li>
-                                            <li id="menu-item-3692"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3692">
-                                                <a href="https://longbeachrocketry.com/subsystems/" class="menu-link">SUBSYSTEMS</a>
-                                            </li>
-                                            <li id="menu-item-4525"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4525">
-                                                <a href="https://longbeachrocketry.com/outreach/" class="menu-link">OUTREACH</a>
-                                            </li>
-                                            <li id="menu-item-3694"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3694">
-                                                <a href="https://longbeachrocketry.com/supportus/" class="menu-link">SUPPORT
-                                                    US</a></li>
-                                            <li id="menu-item-3695"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695">
-                                                <a href="https://longbeachrocketry.com/about-2/"
-                                                   class="menu-link">ABOUT</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div><!-- Main Header Container -->
-                </div><!-- ast-row -->
-            </div> <!-- Main Header Bar -->
-        </div> <!-- Main Header Bar Wrap -->
 
+<div class="wp-block-group has-black-background-color has-background"><div class="wp-block-group__inner-container">
+<hr class="wp-block-separator is-style-dots"/>
 
-    </header><!-- #masthead -->
 
 
-    <div id="content" class="site-content">
+<div class="wp-block-columns">
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:1%"></div>
 
-        <div class="ast-container">
 
 
-            <div id="primary" class="content-area primary">
+<div class="wp-block-column" style="flex-basis:47%">
+<h2 class="has-text-align-left">Plans For This Year:</h2>
 
 
-                <main id="main" class="site-main">
 
+<p><span class="has-inline-color has-white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor rhoncus. Ultricies tristique nulla aliquet enim. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Venenatis a condimentum vitae sapien pellentesque. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Semper feugiat nibh sed pulvinar proin. Quam nulla porttitor massa id neque aliquam vestibulum morbi. Rhoncus aenean vel elit scelerisque mauris. Ultrices dui sapien eget mi proin sed libero.</span></p>
 
-                    <article
-                            class="post-4925 page type-page status-draft ast-article-single" id="post-4925"
-                            itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
 
 
-                        <header class="entry-header ast-no-thumbnail ast-no-meta">
+<p></p>
+</div>
 
 
-                            <h1 class="entry-title" itemprop="headline"><span
-                                    style="position: absolute; rect(1px, 1px, 1px, 1px); overflow: hidden; height: 1px; width: 1px;">SUBSYSTEMS</span>
-                            </h1></header><!-- .entry-header -->
 
-                        <div class="entry-content clear"
-                             itemprop="text">
+<div class="wp-block-column" style="flex-basis:3%"></div>
+</div>
 
 
-                            <div class="wp-block-cover alignfull has-white-background-color" style="min-height:600px">
-                                <img loading="lazy" width="1024" height="576"
-                                     class="wp-block-cover__image-background wp-image-4443" alt=""
-                                     src="https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited.jpg"
-                                     style="object-position:50% 60%" data-object-fit="cover"
-                                     data-object-position="50% 60%"
-                                     srcset="https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited.jpg 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited-300x169.jpg 300w, https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited-768x432.jpg 768w"
-                                     sizes="(max-width: 1024px) 100vw, 1024px"/>
-                                <div class="wp-block-cover__inner-container">
-                                    <p class="has-text-align-right" style="font-size:60px"><strong><span
-                                            style="color:#ecaa00"
-                                            class="has-inline-color">&#8220;DIVISION NAME&#8221;</span></strong></p>
-                                </div>
-                            </div>
 
+<hr class="wp-block-separator has-text-color has-background has-black-background-color has-black-color is-style-default"/>
 
-                            <div class="wp-block-group has-white-background-color has-background">
-                                <div class="wp-block-group__inner-container">
-                                    <hr class="wp-block-separator has-text-color has-background has-white-background-color has-white-color is-style-dots"/>
 
 
-                                    <div class="wp-block-columns">
-                                        <div class="wp-block-column is-vertically-aligned-center">
-                                            <h2>&#8220;DIVISION NAME&#8221;</h2>
+<p></p>
+</div></div>
+</div></div>
 
 
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                mollit anim id est laborum.</p>
 
+<div class="wp-block-group has-white-background-color has-background"><div class="wp-block-group__inner-container">
+<hr class="wp-block-separator has-text-color has-background has-white-background-color has-white-color is-style-default"/>
 
-                                            <p><strong>SUBDIVISIONS:</strong> Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
 
 
-                                    <div class="wp-block-group has-black-background-color has-background">
-                                        <div class="wp-block-group__inner-container">
-                                            <hr class="wp-block-separator is-style-dots"/>
+<div class="wp-block-columns"></div>
+</div></div>
 
 
-                                            <div class="wp-block-columns">
-                                                <div class="wp-block-column is-vertically-aligned-center"
-                                                     style="flex-basis:1%"></div>
 
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<h2 class="has-black-background-color has-background">SPONSORS</h2>
 
-                                                <div class="wp-block-column" style="flex-basis:47%">
-                                                    <h2 class="has-text-align-left">Plans For This Year:</h2>
 
 
-                                                    <p><span class="has-inline-color has-white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor rhoncus. Ultricies tristique nulla aliquet enim. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Venenatis a condimentum vitae sapien pellentesque. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Semper feugiat nibh sed pulvinar proin. Quam nulla porttitor massa id neque aliquam vestibulum morbi. Rhoncus aenean vel elit scelerisque mauris. Ultrices dui sapien eget mi proin sed libero.</span>
-                                                    </p>
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<figure class="wp-block-image size-large is-style-default"><img loading="lazy" width="1024" height="256" src="https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-1024x256.jpg" alt="" class="wp-image-4903" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-1024x256.jpg 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-300x75.jpg 300w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-768x192.jpg 768w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-1536x384.jpg 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-2048x512.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+</div></div>
+</div>
 
 
-                                                    <p></p>
-                                                </div>
 
+<div class="wp-block-column">
+<h2 class="has-black-background-color has-background">FOLLOW LONG BEACH ROCKETRY</h2>
 
-                                                <div class="wp-block-column" style="flex-basis:3%"></div>
-                                            </div>
 
 
-                                            <hr class="wp-block-separator has-text-color has-background has-black-background-color has-black-color is-style-default"/>
+<hr class="wp-block-separator has-text-color has-background has-white-background-color has-white-color is-style-wide"/>
 
 
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<p><span class="has-inline-color has-white-color">&#8212;&#8212;</span><img loading="lazy" width="2880" height="2880" class="wp-image-4075" style="width: 35px;" src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook.png" alt="" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-1536x1536.png 1536w" sizes="(max-width: 2880px) 100vw, 2880px" /><span class="has-inline-color has-white-color">&#8211;</span><a href="https://www.facebook.com/LongBeachRocketry/">@Long Beach Rocketry</a><span class="has-inline-color has-white-color">&#8212;&#8211;</span><img loading="lazy" width="2880" height="2880" class="wp-image-4079" style="width: 35px;" src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram.png" alt="" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-1536x1536.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-2048x2048.png 2048w" sizes="(max-width: 2880px) 100vw, 2880px" /><span class="has-inline-color has-white-color">&#8211;</span><a href="https://www.instagram.com/longbeachrocketry/?hl=en">@longbeachrocketry</a></p>
 
-                            <div class="wp-block-group has-white-background-color has-background">
-                                <div class="wp-block-group__inner-container">
-                                    <hr class="wp-block-separator has-text-color has-background has-white-background-color has-white-color is-style-default"/>
 
 
-                                    <div class="wp-block-columns"></div>
-                                </div>
-                            </div>
+<p><span class="has-inline-color has-white-color">&#8212;&#8212;</span><img loading="lazy" width="2880" height="2880" class="wp-image-4095" style="width: 35px;" src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube.png" alt="" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-1536x1536.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-2048x2048.png 2048w" sizes="(max-width: 2880px) 100vw, 2880px" /><span class="has-inline-color has-white-color">&#8211;</span><a href="https://www.youtube.com/channel/UCNTJNcUKkOVDafpquB2ecOQ">Long Beach Rocketry</a><span class="has-inline-color has-white-color">&#8212;&#8211;</span><img loading="lazy" width="2880" height="2880" class="wp-image-4080" style="width: 35px;" src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail.png" alt="" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-1536x1536.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-2048x2048.png 2048w" sizes="(max-width: 2880px) 100vw, 2880px" /><span class="has-inline-color has-white-color">&#8211;</span><a href="mailto:longbeachrocketry@gmail.com">longbeachrocketry@gmail.com</a></p>
+</div></div>
+</div>
+</div>
 
 
-                            <div class="wp-block-columns">
-                                <div class="wp-block-column">
-                                    <h2 class="has-black-background-color has-background">SPONSORS</h2>
 
+<p></p>
 
-                                    <div class="wp-block-group">
-                                        <div class="wp-block-group__inner-container">
-                                            <figure class="wp-block-image size-large is-style-default"><img
-                                                    loading="lazy" width="1024" height="256"
-                                                    src="https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-1024x256.jpg"
-                                                    alt="" class="wp-image-4903"
-                                                    srcset="https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-1024x256.jpg 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-300x75.jpg 300w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-768x192.jpg 768w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-1536x384.jpg 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/12/Previous-and-Present-Sponsors-20-21-3-2048x512.jpg 2048w"
-                                                    sizes="(max-width: 1024px) 100vw, 1024px"/></figure>
-                                        </div>
-                                    </div>
-                                </div>
+		
+		
+	</div><!-- .entry-content .clear -->
 
+	
+	
+</article><!-- #post-## -->
 
-                                <div class="wp-block-column">
-                                    <h2 class="has-black-background-color has-background">FOLLOW LONG BEACH
-                                        ROCKETRY</h2>
 
-
-                                    <hr class="wp-block-separator has-text-color has-background has-white-background-color has-white-color is-style-wide"/>
-
-
-                                    <div class="wp-block-group">
-                                        <div class="wp-block-group__inner-container">
-                                            <p><span class="has-inline-color has-white-color">&#8212;&#8212;</span><img
-                                                    loading="lazy" width="2880" height="2880" class="wp-image-4075"
-                                                    style="width: 35px;"
-                                                    src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook.png"
-                                                    alt=""
-                                                    srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Facebook-1536x1536.png 1536w"
-                                                    sizes="(max-width: 2880px) 100vw, 2880px"/><span
-                                                    class="has-inline-color has-white-color">&#8211;</span><a
-                                                    href="https://www.facebook.com/LongBeachRocketry/">@Long Beach
-                                                Rocketry</a><span class="has-inline-color has-white-color">&#8212;&#8211;</span><img
-                                                    loading="lazy" width="2880" height="2880" class="wp-image-4079"
-                                                    style="width: 35px;"
-                                                    src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram.png"
-                                                    alt=""
-                                                    srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-1536x1536.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Instagram-2048x2048.png 2048w"
-                                                    sizes="(max-width: 2880px) 100vw, 2880px"/><span
-                                                    class="has-inline-color has-white-color">&#8211;</span><a
-                                                    href="https://www.instagram.com/longbeachrocketry/?hl=en">@longbeachrocketry</a>
-                                            </p>
-
-
-                                            <p><span class="has-inline-color has-white-color">&#8212;&#8212;</span><img
-                                                    loading="lazy" width="2880" height="2880" class="wp-image-4095"
-                                                    style="width: 35px;"
-                                                    src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube.png"
-                                                    alt=""
-                                                    srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-1536x1536.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Youtube-2048x2048.png 2048w"
-                                                    sizes="(max-width: 2880px) 100vw, 2880px"/><span
-                                                    class="has-inline-color has-white-color">&#8211;</span><a
-                                                    href="https://www.youtube.com/channel/UCNTJNcUKkOVDafpquB2ecOQ">Long
-                                                Beach Rocketry</a><span class="has-inline-color has-white-color">&#8212;&#8211;</span><img
-                                                    loading="lazy" width="2880" height="2880" class="wp-image-4080"
-                                                    style="width: 35px;"
-                                                    src="https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail.png"
-                                                    alt=""
-                                                    srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail.png 2880w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-300x300.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-1024x1024.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-150x150.png 150w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-768x768.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-1536x1536.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/Mail-2048x2048.png 2048w"
-                                                    sizes="(max-width: 2880px) 100vw, 2880px"/><span
-                                                    class="has-inline-color has-white-color">&#8211;</span><a
-                                                    href="mailto:longbeachrocketry@gmail.com">longbeachrocketry@gmail.com</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <p></p>
-
-
-                        </div><!-- .entry-content .clear -->
-
-
-                    </article><!-- #post-## -->
-
-
-                </main><!-- #main -->
-
-
-            </div><!-- #primary -->
-
-
-        </div> <!-- ast-container -->
-
-    </div><!-- #content -->
-
-
-    <footer
-            class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope"
-            itemid="#colophon">
-
-
-        <div class="ast-small-footer footer-sml-layout-2">
-            <div class="ast-footer-overlay">
-                <div class="ast-container">
-                    <div class="ast-small-footer-wrap">
-                        <div class="ast-row ast-flex">
-
-                            <div class="ast-small-footer-section ast-small-footer-section-1 ast-small-footer-section-equally ast-col-md-6 ast-col-xs-12">
-                                Copyright © Long Beach Rocketry
-                            </div>
-
-                            <div class="ast-small-footer-section ast-small-footer-section-2 ast-small-footer-section-equally ast-col-md-6 ast-col-xs-12">
-                                <div class="ast-footer-widget-2-area">
-                                    <aside id="media_image-20" class="widget widget_media_image"><img width="167"
-                                                                                                      height="25"
-                                                                                                      src="https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-300x45.png"
-                                                                                                      class="image wp-image-3765  attachment-167x25 size-167x25"
-                                                                                                      alt=""
-                                                                                                      loading="lazy"
-                                                                                                      style="max-width: 100%; height: auto;"
-                                                                                                      srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-300x45.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-1024x153.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-768x115.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-1536x229.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-2048x306.png 2048w"
-                                                                                                      sizes="(max-width: 167px) 100vw, 167px"/>
-                                    </aside>
-                                </div>
-                            </div>
-
-                        </div> <!-- .ast-row.ast-flex -->
-                    </div><!-- .ast-small-footer-wrap -->
-                </div><!-- .ast-container -->
-            </div><!-- .ast-footer-overlay -->
-        </div><!-- .ast-small-footer-->
-
-
-    </footer><!-- #colophon -->
-
-
-</div><!-- #page -->
-
-
-<script src='https://longbeachrocketry.com/wp-includes/js/hoverintent-js.min.js?ver=2.2.1'
-        id='hoverintent-js-js'></script>
+					
+					
+				
+			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+			
+			</div> <!-- ast-container -->
+
+		</div><!-- #content -->
+
+		
+		
+		
+		<footer
+			class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope" itemid="#colophon"		>
+
+			
+			
+<div class="ast-small-footer footer-sml-layout-2">
+	<div class="ast-footer-overlay">
+		<div class="ast-container">
+			<div class="ast-small-footer-wrap" >
+					<div class="ast-row ast-flex">
+
+											<div class="ast-small-footer-section ast-small-footer-section-1 ast-small-footer-section-equally ast-col-md-6 ast-col-xs-12" >
+							Copyright © Long Beach Rocketry						</div>
+				
+											<div class="ast-small-footer-section ast-small-footer-section-2 ast-small-footer-section-equally ast-col-md-6 ast-col-xs-12" >
+							<div class="ast-footer-widget-2-area"><aside id="media_image-20" class="widget widget_media_image"><img width="167" height="25" src="https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-300x45.png" class="image wp-image-3765  attachment-167x25 size-167x25" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-300x45.png 300w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-1024x153.png 1024w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-768x115.png 768w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-1536x229.png 1536w, https://longbeachrocketry.com/wp-content/uploads/2020/10/CSULB_Logo_YellowWhite-2048x306.png 2048w" sizes="(max-width: 167px) 100vw, 167px" /></aside></div>						</div>
+				
+					</div> <!-- .ast-row.ast-flex -->
+			</div><!-- .ast-small-footer-wrap -->
+		</div><!-- .ast-container -->
+	</div><!-- .ast-footer-overlay -->
+</div><!-- .ast-small-footer-->
+
+			
+		</footer><!-- #colophon -->
+		
+		
+	</div><!-- #page -->
+
+	
+	<script src='https://longbeachrocketry.com/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
 <script src='https://longbeachrocketry.com/wp-includes/js/admin-bar.min.js?ver=5.6.2' id='admin-bar-js'></script>
 <script id='astra-theme-js-js-extra'>
-    var astra = {"break_point": "921", "isRtl": ""};
+var astra = {"break_point":"921","isRtl":""};
 </script>
-<script src='https://longbeachrocketry.com/wp-content/themes/astra/assets/js/minified/style.min.js?ver=2.6.0'
-        id='astra-theme-js-js'></script>
+<script src='https://longbeachrocketry.com/wp-content/themes/astra/assets/js/minified/style.min.js?ver=2.6.0' id='astra-theme-js-js'></script>
 <script src='https://longbeachrocketry.com/wp-includes/js/wp-embed.min.js?ver=5.6.2' id='wp-embed-js'></script>
-<script>
-    /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
-        var t, e = location.hash.substring(1);
-        /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
-    }, !1);
-</script>
-
-</body>
+			<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+			
+	</body>
 </html>
 
