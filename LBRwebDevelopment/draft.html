@@ -6,14 +6,19 @@
     <style>
         .container {
             position: relative;
-            width: 60%;
+            width: 1200px;
         }
 
-        .under {
+        .container:hover .overlay {
+            width: 100%;
+            left: 0;
+        }
+
+        /* .under {
             display: block;
             width: 100%;
             height: 75%;
-        }
+        } */
 
         .overlay {
             position: absolute;
@@ -27,12 +32,7 @@
             transition: .5s ease;
         }
 
-        .container:hover .overlay {
-            width: 100%;
-            left: 0;
-        }
-
-        .text {
+        /* .name {
             color: white;
             font-size: 15px;
             position: absolute;
@@ -42,9 +42,9 @@
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             white-space: nowrap;
-        }
+        } */
 
-        .bio {
+        /* .bio {
             color: white;
             font-size: 20px;
             position: absolute;
@@ -53,7 +53,7 @@
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-        }
+        } */
 
     </style>
     <title>Slider draft</title>
@@ -62,11 +62,11 @@
 <body>
 
     <div class="container">
-        <img src="https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited.jpg" alt="steel" class="under" width=1000 height=750>
+        <img src="https://longbeachrocketry.com/wp-content/uploads/2020/11/Manufacturing_Team-edited.jpg" class="under" style="display: block; width: 100%; height: 75%;">
         <div class="overlay">
             <div> <img src="https://longbeachrocketry.com/wp-content/uploads/2020/10/LBR_Logo.png" class="over" width = 50% height = 50% ></div>
-            <div class="text">"Lead Name"</div>
-            <div class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="name" style="color: white;font-size: 15px;position: absolute;top: 85%;left: 25%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);white-space: nowrap;">"Lead Name"</div>
+            <div class="bio" style="color: white;font-size:20px;position:absolute;top: 50%;left: 75%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
     </div>
 
