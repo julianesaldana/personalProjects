@@ -92,15 +92,6 @@ class App():
         enemy_image = PhotoImage(file='images/EnemiesImages/7.gif')
         self.enemy_player = Label(self.root, image=enemy_image)
 
-        # Placing the boxes.
-        # self.type_box.place(x=130,y=200)
-        # self.player_health.place(x=130,y=250)
-        # self.enemy_health.place(x=200,y=250)
-        # self.time_display.place(x=160,y=10)
-
-        # self.attack.place(x=130,y=150)
-        # self.start_battle.place(x=130,y=100)
-
         self.root.mainloop()
 
     def character_select(self):
@@ -126,20 +117,6 @@ class App():
 
         # Crypto
         self.crypto_button.place(relx=0.75, rely=0.50, anchor=CENTER)
-
-
-    # def loop_character_select(self):
-    #     self.time_display.place_forget()
-    #     self.title_label = Label(self.root, text='Choose your character!', font="Courier 30 italic bold")
-    #     # self.title_label.pack(ipady=50)
-    #     self.title_label.place_forget()  ####
-    #
-    #     # Cody
-    #     self.cody_button.place(relx=0.15, rely=0.80, anchor=W)
-    #     # Byte
-    #     self.byte_button.place(relx=0.15, rely=0.80, anchor=W)
-    #     # Crypto
-    #     self.crypto_button.place(relx=0.15, rely=0.80, anchor=W)
 
     def cody_select(self):
         global player_image
@@ -239,13 +216,6 @@ class App():
         self.enemy_hp.set(current_enemy.hp)
         self.enemy_time_displayed.set(current_enemy.time)
         self.current_word.set(current_enemy.word)
-        ###
-        # player1 = Player("Player1")
-        # enemy1 = EasyEnemy("Enemy1")
-        # self.player_health = player1.hp
-        # self.enemy_hp = enemy1.hp
-        ###
-        # self.player_hp.set(newHP)
 
         battle_running = True
         self.start_battle.place_forget()
@@ -300,7 +270,6 @@ class App():
                 self.player_hp.set(int(self.player_hp.get()) + 30)
             battle_running = False
             self.root.after(5000, self.start)
-
 
         if battle_running:
             enemy_time = self.enemy_time_displayed.get()
