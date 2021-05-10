@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o -o leetCode 
+/usr/bin/c++ -g CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o -o leetCode 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o"
+  "CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o"
   "leetCode"
   "leetCode.pdb"
 )

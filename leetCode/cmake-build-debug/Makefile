@@ -142,32 +142,32 @@ leetCode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetCode.dir/build.make CMakeFiles/leetCode.dir/build
 .PHONY : leetCode/fast
 
-RichestCustomerWealth.o: RichestCustomerWealth.cpp.o
+GreatestNumberCandies.o: GreatestNumberCandies.cpp.o
 
-.PHONY : RichestCustomerWealth.o
+.PHONY : GreatestNumberCandies.o
 
 # target to build an object file
-RichestCustomerWealth.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetCode.dir/build.make CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o
-.PHONY : RichestCustomerWealth.cpp.o
+GreatestNumberCandies.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetCode.dir/build.make CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o
+.PHONY : GreatestNumberCandies.cpp.o
 
-RichestCustomerWealth.i: RichestCustomerWealth.cpp.i
+GreatestNumberCandies.i: GreatestNumberCandies.cpp.i
 
-.PHONY : RichestCustomerWealth.i
+.PHONY : GreatestNumberCandies.i
 
 # target to preprocess a source file
-RichestCustomerWealth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetCode.dir/build.make CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.i
-.PHONY : RichestCustomerWealth.cpp.i
+GreatestNumberCandies.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetCode.dir/build.make CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.i
+.PHONY : GreatestNumberCandies.cpp.i
 
-RichestCustomerWealth.s: RichestCustomerWealth.cpp.s
+GreatestNumberCandies.s: GreatestNumberCandies.cpp.s
 
-.PHONY : RichestCustomerWealth.s
+.PHONY : GreatestNumberCandies.s
 
 # target to generate assembly for a file
-RichestCustomerWealth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetCode.dir/build.make CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.s
-.PHONY : RichestCustomerWealth.cpp.s
+GreatestNumberCandies.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetCode.dir/build.make CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.s
+.PHONY : GreatestNumberCandies.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... leetCode"
-	@echo "... RichestCustomerWealth.o"
-	@echo "... RichestCustomerWealth.i"
-	@echo "... RichestCustomerWealth.s"
+	@echo "... GreatestNumberCandies.o"
+	@echo "... GreatestNumberCandies.i"
+	@echo "... GreatestNumberCandies.s"
 .PHONY : help
 
 

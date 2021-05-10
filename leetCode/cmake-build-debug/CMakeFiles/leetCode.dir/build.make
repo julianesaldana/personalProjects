@@ -76,27 +76,27 @@ include CMakeFiles/leetCode.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/leetCode.dir/flags.make
 
-CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o: CMakeFiles/leetCode.dir/flags.make
-CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o: ../RichestCustomerWealth.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julian/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o -c /home/julian/Documents/personalProjects/leetCode/RichestCustomerWealth.cpp
+CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o: CMakeFiles/leetCode.dir/flags.make
+CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o: ../GreatestNumberCandies.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julian/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o -c /home/julian/Documents/personalProjects/leetCode/GreatestNumberCandies.cpp
 
-CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/Documents/personalProjects/leetCode/RichestCustomerWealth.cpp > CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.i
+CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julian/Documents/personalProjects/leetCode/GreatestNumberCandies.cpp > CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.i
 
-CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/Documents/personalProjects/leetCode/RichestCustomerWealth.cpp -o CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.s
+CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julian/Documents/personalProjects/leetCode/GreatestNumberCandies.cpp -o CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.s
 
 # Object files for target leetCode
 leetCode_OBJECTS = \
-"CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o"
+"CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o"
 
 # External object files for target leetCode
 leetCode_EXTERNAL_OBJECTS =
 
-leetCode: CMakeFiles/leetCode.dir/RichestCustomerWealth.cpp.o
+leetCode: CMakeFiles/leetCode.dir/GreatestNumberCandies.cpp.o
 leetCode: CMakeFiles/leetCode.dir/build.make
 leetCode: CMakeFiles/leetCode.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/julian/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable leetCode"

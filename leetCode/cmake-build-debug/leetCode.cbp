@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/julian/Documents/personalProjects/leetCode/RichestCustomerWealth.cpp">
+		<Unit filename="/home/julian/Documents/personalProjects/leetCode/GreatestNumberCandies.cpp">
 			<Option target="leetCode"/>
 		</Unit>
 		<Unit filename="/home/julian/Documents/personalProjects/leetCode/CMakeLists.txt">
