@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/juliansaldana/Documents/personalProjects/leetCode/GreatestNumberCandies.cpp
+/home/julian/Documents/personalProjects/leetCode/NumberOfGoodPairs.cpp
 iostream
 -
 vector
