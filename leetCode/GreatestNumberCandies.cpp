@@ -6,6 +6,12 @@ using namespace std;
 vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
     vector<bool> results;
     int maximum = candies[0];
+
+    for (int i = 0; i < candies.size(); i++) {
+        if (candies[i] > maximum)
+            maximum = candies[i];
+    }
+
     for (int i = 0; i < candies.size(); i++) {
         if (candies[i] + extraCandies >= maximum) {
             results.push_back(true);
@@ -21,8 +27,8 @@ vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
    else in the list?
 */
 int main() {
-    vector<int> candies = {1,2,3,4,5};
-    int extraCandies = 3;
+    vector<int> candies = {12, 1, 12};
+    int extraCandies = 10;
     vector<bool> results = kidsWithCandies(candies, extraCandies);
     for (int i = 0; i < results.size(); i++) {
         cout << results[i] << endl;
