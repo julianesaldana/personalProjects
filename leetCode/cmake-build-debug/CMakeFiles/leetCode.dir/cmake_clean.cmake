@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/leetCode.dir/NumberOfGoodPairs.cpp.o"
+  "CMakeFiles/leetCode.dir/ReverseInteger.cpp.o"
   "leetCode"
   "leetCode.pdb"
 )

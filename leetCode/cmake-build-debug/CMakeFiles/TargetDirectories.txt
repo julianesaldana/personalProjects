@@ -1,3 +1,3 @@
-/home/julian/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/julian/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/julian/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles/leetCode.dir
+/Users/juliansaldana/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/juliansaldana/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/juliansaldana/Documents/personalProjects/leetCode/cmake-build-debug/CMakeFiles/leetCode.dir
