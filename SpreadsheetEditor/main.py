@@ -1,4 +1,4 @@
-from openpyxl import load_workbook
+from openpyxl import *
 
 
 def main():
@@ -8,10 +8,10 @@ def main():
     # opening workbook
     sheet = workbook.active
 
-    # modifying the desired cell
-    sheet["D13"] = 120
-    sheet["D14"] = 50
-    sheet["D15"] = 30
+    total = 0
+
+    for cell in sheet('E'):
+        print(cell.value)
 
     workbook.save(filename="sample.xlsx")
 
