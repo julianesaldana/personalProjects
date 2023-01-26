@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Node class to represent nodes of linked lists, utilizing heaps
+// Node class to represent nodes of linked lists
 class Node {
 public:
     int data;
@@ -26,7 +26,7 @@ public:
     }
 };
 
-// class to represent Linked Lists using the Node class above, utilizing heaps
+// class to represent Linked Lists using the Node class above
 class LinkedList {
     Node *head;
 
@@ -122,6 +122,111 @@ public:
     }
 };
 
+// class to represent a simple implementation of Stacks
+class Stack{
+private:
+    int stk[10];
+    int top;        // keep track of whatever is at the top
+public:
+    Stack() {
+        top = -1;   // initialize as empty, represented as -1
+    }
+
+    void push(int num){     // push an element onto the stack
+        if (top >= 9) {    // if not enough space
+            cout << "stack overflow, cannot add element" << endl;
+            return;
+        }
+
+        stk[++top] = num;   // will always increment by 1 before adding num to stack, since starts at -1
+    }
+
+    void pop() {     // pops/deletes value of the last element
+        // check for stack underflow
+        if (top < 0) {
+            cout << "stack underflow, list empty cannot pop" << endl;
+            return;
+        }
+        stk[top] = -1;  // set as -1 to represent deleted number
+        stk[top--];     // go back one spot to represent new top
+    }
+
+    int peek() {    // this function returns item at top of the stack
+        return stk[top];
+    }
+
+    void display() {
+        if (top < 0) {
+            cout << "empty stack" << endl;
+        }
+
+        for (int i = top; i >= 0; i--) {
+            cout << stk[i] << " ";
+        }
+
+        cout << endl;
+    }
+
+};
+
+// class to represent a queue, will be utilizing Node class
+class Queue{
+private:
+    Node *front;        // will consist of a front and rear node with nodes in between
+    Node *rear;
+public:
+    Queue() {       // set all values to NULL for new queue
+        front = NULL;
+        rear = NULL;
+    }
+
+    void add(int data) {
+        Node *newNode = new Node(data);     // create new Node object
+
+        // if queue is empty, set new node as front
+        if (front == NULL) {
+            front = newNode;
+            return;
+        }
+
+        // if front but no rear, set new node as rear
+        if (rear == NULL) {
+            rear = newNode;
+            front->next = rear;
+            return;
+        }
+
+        // if adding to rear of queue
+        rear->next = newNode;
+        rear = newNode;
+    }
+
+    void remove() {
+        if (front == NULL) {
+            cout << "queue empty, cannot delete" << endl;
+            return;
+        }
+
+        Node *temp = front;
+        front = front->next;
+        delete temp;
+    }
+
+    void display(){
+        if (front == NULL) {
+            cout << "queue empty" << endl;
+            return;
+        }
+
+        Node *temp = front;
+        while (temp != NULL) {
+            cout << temp->data << " ";
+            temp = temp->next;
+        }
+        cout << endl;
+    }
+
+};
 
 int main() {
     // main will contain the data structures and how they are used
@@ -166,6 +271,7 @@ int main() {
     // adjacent memory locations to store values
 
     // declare array
+    cout << "ARRAYS" << endl;
     int numbers[5];
 
     // showing operations
@@ -182,13 +288,13 @@ int main() {
     // each node consists of data and pointer to next node
     // list is dynamic, can be resized
 
-    // typical notation for optimized linked lists
+    // typical notation for optimized linked lists, not this implementation
     // insertion == O(1)
     // deletion == O(n)
     // searching == O(n)
 
-
     // declare linked list
+    cout << "LINKED LISTS" << endl;
     LinkedList linkedList;
 
     // adding values
@@ -207,6 +313,52 @@ int main() {
     linkedList.deleteNode(3);       // testing out of range
     cout << "after deletion" << endl;
     linkedList.printList();
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    // STACK
+    // abstract linear data structure in which operations are done at the top only, LIFO
+    // can be implemented by using arrays of type linear
+    cout << "STACKS" << endl;
+
+    // initialize stack
+    Stack newStack;
+
+    // insertion
+    newStack.push(5);
+    newStack.push(10);
+    newStack.display();
+
+    // deletion aka pop
+    cout << newStack.peek() << endl;
+    newStack.pop();
+    newStack.display();
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    // QUEUES
+    // abstract linear data structure used to represent a linear list
+    // deletion on front end and insertion on rear end, FIFO
+
+    // initialize
+    cout << "QUEUES" << endl;
+    Queue qu;
+
+    // insertion
+    qu.add(5);
+    qu.add(7);
+    qu.add(10);
+    qu.display();
+
+    // deletion
+    qu.remove();
+    qu.display();
+
+    qu.remove();
+    qu.remove();
+    qu.display();
+
 
     return 0;
 }
