@@ -52,9 +52,20 @@ int binarySearchRec(vector<int> numbers, int l, int r, int wantToFind) {  // rec
     return -1;
 }
 
+vector<int> bubbleSort(vector<int> numbers){
+    for (int i = 0; i < numbers.size() - 1; i++) {  // iterate through list
+        for (int j = 0; j < numbers.size() - i - 1; j++) {  // iterate through list again for each index, n*n, n^2 running time
+            if (numbers[j] > numbers[j + 1]) {  // if value left is greater than value to the right
+                swap(numbers[j], numbers[j + 1]);   // swap STL built-in function to swap value of two variables
+            }
+        }
+    }
+    return numbers;
+}
+
 int main() {
     //////////////////////////////////////////////////////////////////////////////////////////////
-    cout << "Algorithms" << endl;
+    // ALGORITHMS
     // here contains general info regarding algorithms
     // all algos will be implemented in separate classes above, main will contain data input and output
 
@@ -79,7 +90,9 @@ int main() {
 
     //////////////////////////////////////////////////////////////////////////////////////////
     // SEARCHING algorithms
-    cout << "\nSearching algos" << endl;
+    cout << "Searching algos" << endl;
+
+
 
     // LINEAR/SEQUENTIAL SEARCH
     // search entire list in sequential order
@@ -89,9 +102,9 @@ int main() {
     int numbers[10] = {4, 6, 2, 8, 10, 451, 43, 1, 53, 23};
     int wantToFind = 451;
     cout << wantToFind << " found at index " << linearSearch(numbers, wantToFind) << endl;
+
+
     
-    
-    //////////////////////////////////////////////////////////////////////////////////////////
     // BINARY SEARCH
     // requires list to be in sorted order
     // iterative and recursive approach
@@ -109,9 +122,34 @@ int main() {
    
 
     //////////////////////////////////////////////////////////////////////////////////////////
+    cout << "\n\nSorting algos\n" << endl;
     // SORTING ALGORITHMS
-    cout << "\nSorting" << endl;
+    // internal sorting preferred if data to be sorted can be adjusted at a time in main memory
+    // external sorting preferred if data cannot be accommodated in main memory and is kept in auxiliary memory ex. hard disks
 
-    
+    // choice of sorting method depends on
+        // amount of machine time needed
+        // amount of memory needed
+        // time needed for programming sorting method and its complexity
+
+    // each sorting method has best, worst and amortized running time
+
+
+
+    // BUBBLE SORT
+    // not suitable for large data sets, avg and worst case time complexity is high
+    cout << "BUBBLE SORT" << endl;
+    vector<int> unSorted = {2,6,23,5,4,1,6,64,3};
+    cout << "before sort" << endl;
+    for (int i : unSorted) {
+        cout << i << " ";
+    }
+    cout << endl;
+    cout << "\nafter sort" << endl;
+    vector<int> sorted = bubbleSort(unSorted);
+    for (int i : sorted) {
+        cout << i << " ";
+    }
+    cout << endl;
     return 0;
 }
