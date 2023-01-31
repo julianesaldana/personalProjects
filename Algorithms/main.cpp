@@ -3,6 +3,8 @@
 
 using namespace std;    // standard c++ library
 
+// searching algorithms
+
 int linearSearch(int numbers[], int wantToFind) {
     for (int i = 0 ; i < sizeof(numbers) / sizeof(numbers[0]); i++) {   // look through data structure
         if (wantToFind == numbers[i]) {     // if item matches what is needed to find
@@ -52,6 +54,8 @@ int binarySearchRec(vector<int> numbers, int l, int r, int wantToFind) {  // rec
     return -1;
 }
 
+// sorting algorithms
+
 vector<int> bubbleSort(vector<int> numbers){
     for (int i = 0; i < numbers.size() - 1; i++) {  // iterate through list
         for (int j = 0; j < numbers.size() - i - 1; j++) {  // iterate through list again for each index, n*n, n^2 running time
@@ -62,6 +66,22 @@ vector<int> bubbleSort(vector<int> numbers){
     }
     return numbers;
 }
+
+vector<int> selectionSort(vector<int> numbers) {
+    for (int i = 0; i < numbers.size() - 1; i++) {  // using this loop to loop through each item, represents the ordered portion
+        int min = i;    // starting at first index
+        for (int j = i + 1; j < numbers.size(); j++) {  // checking every other element besides current, represents unordered portion
+            if (numbers[j] < numbers[min]) {    // setting min if element is smaller than current
+                min = j;
+            }
+        }
+        if (numbers[i] > numbers[min]) {    // after find min, if it is smaller than current element, swap
+            swap(numbers[i], numbers[min]);
+        }   // after this, the vector will have two portions, sorted left side, unsorted on the right side
+    }
+    return numbers;
+}
+
 
 int main() {
     //////////////////////////////////////////////////////////////////////////////////////////////
@@ -88,10 +108,9 @@ int main() {
     // also consists of average/amortized time analysis, in most case scenarios
 
 
-    //////////////////////////////////////////////////////////////////////////////////////////
+    cout << "//////////////////////////////////////////////////////////////////////////////////////////" << endl;
     // SEARCHING algorithms
     cout << "Searching algos" << endl;
-
 
 
     // LINEAR/SEQUENTIAL SEARCH
@@ -103,10 +122,10 @@ int main() {
     int wantToFind = 451;
     cout << wantToFind << " found at index " << linearSearch(numbers, wantToFind) << endl;
 
-
     
     // BINARY SEARCH
     // requires list to be in sorted order
+    // compares values of list by > or < desired value, similar to binary tree
     // iterative and recursive approach
     // O(logn)
 
@@ -117,39 +136,60 @@ int main() {
     cout << "iterative binary search" << endl;
     cout << wantToFind << " found at index " << binarySearch(numbers2, wantToFind) << endl;
     
-    cout << "\nrecursive binary search" << endl;
+    cout << "recursive binary search" << endl;
     cout << wantToFind << " found at index " << binarySearchRec(numbers2, 0, numbers2.size() - 1, wantToFind) << endl;
    
 
-    //////////////////////////////////////////////////////////////////////////////////////////
-    cout << "\n\nSorting algos\n" << endl;
+    cout << "\n//////////////////////////////////////////////////////////////////////////////////////////" << endl;
+    cout << "Sorting algos\n" << endl;
     // SORTING ALGORITHMS
     // internal sorting preferred if data to be sorted can be adjusted at a time in main memory
     // external sorting preferred if data cannot be accommodated in main memory and is kept in auxiliary memory ex. hard disks
-
     // choice of sorting method depends on
         // amount of machine time needed
         // amount of memory needed
         // time needed for programming sorting method and its complexity
-
-    // each sorting method has best, worst and amortized running time
-
+    // each sorting method has a best, worst and amortized running time
 
 
     // BUBBLE SORT
     // not suitable for large data sets, avg and worst case time complexity is high
+    // repeatedly swaps adjacent elements until sorted
+    // O(n^2)
+    // not stable, elements with same key value may not maintain their relative order in the sorted output
     cout << "BUBBLE SORT" << endl;
     vector<int> unSorted = {2,6,23,5,4,1,6,64,3};
     cout << "before sort" << endl;
     for (int i : unSorted) {
         cout << i << " ";
     }
-    cout << endl;
     cout << "\nafter sort" << endl;
     vector<int> sorted = bubbleSort(unSorted);
     for (int i : sorted) {
         cout << i << " ";
     }
     cout << endl;
+
+
+    // SELECTION SORT
+    // not suitable for large data sets, worst and average case time complexity high
+    // repeatedly select smallest or largest element from unsorted portion of list
+        // splits array into two subarrays (not literally but figuratively), moves min/max of unsorted elements to left side of list
+    // O(n^2)
+    // stable sorting algorithm, preservers the relative order of items with equal keys
+
+    cout << "\nSELECTION SORT" << endl;
+    cout << "before sort" << endl;
+    for (int i : unSorted) {
+        cout << i << " ";
+    }
+    cout << endl;
+    cout << "after sort" << endl;
+    sorted = selectionSort(unSorted);
+    for (int i : sorted) {
+        cout << i << " ";
+    }
+    cout << endl;
+
     return 0;
 }
