@@ -54,6 +54,8 @@ int binarySearchRec(vector<int> numbers, int l, int r, int wantToFind) {  // rec
     return -1;
 }
 
+
+
 // sorting algorithms
 
 vector<int> bubbleSort(vector<int> numbers){
@@ -80,6 +82,69 @@ vector<int> selectionSort(vector<int> numbers) {
         }   // after this, the vector will have two portions, sorted left side, unsorted on the right side
     }
     return numbers;
+}
+
+void merge(vector<int> leftArray, vector<int> rightArray, vector<int> numbers) {
+    int leftSize = numbers.size() / 2;  // max size of left sub array is half
+    int rightSize = numbers.size() - leftSize;  // right side is left over amount on the right
+    int index = 0;  // for original array, represents index
+    int l = 0, r = 0;   // separate indices for sub-arrays, as a subarray may contain larger amount of smaller elements than the other subarray, thus need to keep track
+
+    // checking conditions for merging
+    while (l < leftSize && r < rightSize) {     // while the indexes are smaller than the subarray length, i.e, checking to see if each subarray still contains elements needed to be added
+        if (leftArray[l] < rightArray[r]) {     // if left array element is smaller, add it first
+            numbers[index] = leftArray[l];
+            l++;
+        } else {
+            numbers[index] = rightArray[r];     // same for right
+            r++;                                // increment indexes for each subarray only if it gets added, keeps track of subarray elements that need to be added
+        }
+        index++;
+    }
+
+    while (l < leftSize) {      // add leftover elements from left subarray
+        numbers[index] = leftArray[l];
+        index++;
+        l++;
+    }
+
+    while (r < rightSize) {
+        numbers[index] = rightArray[r];     // add leftover elements from right subarray
+        index++;
+        r++;
+    }
+}
+
+void mergeSort(vector<int> numbers) {
+    int length = numbers.size();    // based on splitting array into 2 sub-arrays each time
+    if (length <= 1) {  // if subarray length is less than 2, that means no more splitting, finished with subarray
+        return;
+    }
+
+    // if not done splitting, calculated middle of subarray
+    int middle = length / 2;
+
+    // initialize two sub-arrays, one for left, one for right
+    vector<int> leftArray;
+    vector<int> rightArray;
+
+    int l = 0;  // left array
+    int r = 0;  // right array
+
+    // split each subarray down the middle and separate into left and right
+    for (int i = 0; i < middle; i++) {
+        leftArray[l] = numbers[i];
+        l++;
+    }
+    for (int i = middle; i < length; i++) {
+        rightArray[r] = numbers[i];
+        r++;
+    }
+
+    // after splitting, keep splitting down left and right
+    mergeSort(leftArray);
+    mergeSort(rightArray);
+    merge(leftArray, rightArray, numbers);  // finally merge all the sub-arrays together using helper method
 }
 
 
@@ -158,7 +223,7 @@ int main() {
     // O(n^2)
     // not stable, elements with same key value may not maintain their relative order in the sorted output
     cout << "BUBBLE SORT" << endl;
-    vector<int> unSorted = {2,6,23,5,4,1,6,64,3};
+    vector<int> unSorted = {7,2,8,23,5,4,1,6,64,3};
     cout << "before sort" << endl;
     for (int i : unSorted) {
         cout << i << " ";
@@ -187,6 +252,27 @@ int main() {
     cout << "after sort" << endl;
     sorted = selectionSort(unSorted);
     for (int i : sorted) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+
+    // MERGE SORT
+    // in simple terms, divide the array into two halves, sort each half, and merge them back together
+    // divide and conquer, recursive
+    // run time complexity = O(n logn), space time complexity = O(n)
+    // sorts large arrays relatively quickly and easy to implement, popular for large data sets
+    // sometimes used with quicksort to improve performance
+
+    cout << "\nMERGE SORT" << endl;
+    cout << "before sort" << endl;
+    for (int i : unSorted) {
+        cout << i << " ";
+    }
+    cout << endl;
+    cout << "after sort" << endl;
+    mergeSort(unSorted);
+    for (int i : unSorted) {
         cout << i << " ";
     }
     cout << endl;
